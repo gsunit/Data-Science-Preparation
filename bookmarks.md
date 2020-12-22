@@ -1,5 +1,3 @@
-# Data Science Preparation
-
 <DT><A HREF="https://towardsdatascience.com/top-10-resources-to-become-a-data-scientist-in-2020-99a315194701">Become a Data Scientist in 2020 with these 10 resources</A>
 <DT><A HREF="https://www.coursera.org/specializations/data-science-python?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-_4L3mvw.I6oY9SNPHAtR2Q&siteID=lVarvwc5BD0-_4L3mvw.I6oY9SNPHAtR2Q&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0">Applied Data Science with Python | Coursera</A>
 <DT><A HREF="https://towardsdatascience.com/minimal-pandas-subset-for-data-scientists-6355059629ae">Minimal Pandas Subset for Data Scientists - Towards Data Science</A>
