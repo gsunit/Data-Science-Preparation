@@ -1,5 +1,9 @@
 # Data Science Preparation
 
+If you are just beginning with ML & Data Science, a good first place to start will be [Andrew Ng Coursera ML course](https://www.coursera.org/learn/machine-learning). Finish at least the first few weeks.
+If you have already done the Andrew Ng course, you might want to brush up on the concepts through these notes. [Stanford Machine Learning, holehouse.org](https://www.holehouse.org/mlclass/)
+
+Now you may proceed binge-watching these ML/Data Science videos. Enjoy :)
 <DT><A HREF="https://towardsdatascience.com/top-10-resources-to-become-a-data-scientist-in-2020-99a315194701">Become a Data Scientist in 2020 with these 10 resources</A>
 <DT><A HREF="https://www.coursera.org/specializations/data-science-python?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-_4L3mvw.I6oY9SNPHAtR2Q&siteID=lVarvwc5BD0-_4L3mvw.I6oY9SNPHAtR2Q&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0">Applied Data Science with Python | Coursera</A>
 <DT><A HREF="https://towardsdatascience.com/minimal-pandas-subset-for-data-scientists-6355059629ae">Minimal Pandas Subset for Data Scientists - Towards Data Science</A>
