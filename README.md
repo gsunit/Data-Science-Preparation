@@ -1,13 +1,18 @@
 # Data Science Preparation
 
-If you are just beginning with ML & Data Science, a good first place to start will be [Andrew Ng Coursera ML course](https://www.coursera.org/learn/machine-learning). Finish at least the first few weeks.
+### Preliminaries
 
-If you have already done the Andrew Ng course, you might want to brush up on the concepts through these notes. [Stanford Machine Learning, holehouse.org](https://www.holehouse.org/mlclass/)
+ - If you are just beginning with ML & Data Science, a good first place to start will be [Andrew Ng Coursera ML course](https://www.coursera.org/learn/machine-learning). Finish at least the first few weeks.
 
+ - If you have already done the Andrew Ng course, you might want to brush up on the concepts through these notes. [Stanford Machine Learning, holehouse.org](https://www.holehouse.org/mlclass/)
 
-Now you may proceed binge-watching these ML/Data Science videos. Enjoy :)
+ - If you want to make a list of important interview topics head over to this article. [Machine Learning Cheatsheet](https://medium.com/swlh/cheat-sheets-for-machine-learning-interview-topics-51c2bc2bab4f)
 
-P.S. Ctrl+F to serach for relevant keywords.
+### Video resources
+
+These videos work really well when you wanna take a break between your intense interview prep or at bedtime when you just want something to scroll at. Now you may proceed binge-watching these ML/Data Science videos. Enjoy :)
+
+**P.S. Ctrl+F to serach for relevant keywords.**
 
 <DT><A HREF="https://towardsdatascience.com/top-10-resources-to-become-a-data-scientist-in-2020-99a315194701">Become a Data Scientist in 2020 with these 10 resources</A>
 <DT><A HREF="https://www.coursera.org/specializations/data-science-python?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-_4L3mvw.I6oY9SNPHAtR2Q&siteID=lVarvwc5BD0-_4L3mvw.I6oY9SNPHAtR2Q&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0">Applied Data Science with Python | Coursera</A>
