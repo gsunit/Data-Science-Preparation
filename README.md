@@ -48,6 +48,7 @@ These videos work really well when you wanna take a break between your intense i
  
 ### Inferential Statistics
  - <DT><A HREF="https://www.youtube.com/watch?v=DEkPZv5ppHI">Z-Statistics vs. T-Statistics</A>
+ - <DT><A HREF="https://www.youtube.com/watch?v=zJ8e_wAWUzE">Hypothesis Testing Problems Z Test & T Statistics One & Two Tailed Tests 2</A>
  - <DT><A HREF="https://www.youtube.com/watch?v=0oc49DyA3hU">Hypothesis Testing and The Null Hypothesis</A>
  - <DT><A HREF="https://www.youtube.com/watch?v=vemZtEM63GY">p-values: What they are and how to interpret them</A>
  - <DT><A HREF="https://www.youtube.com/watch?v=5koKb5B_YWo">Alternative Hypotheses: Main Ideas</A>
