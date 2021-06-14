@@ -29,7 +29,6 @@ These videos work really well when you wanna take a break between your intense i
 
 ### Probablility
  - <DT><A HREF="https://www.youtube.com/watch?v=pYxNSUDSFH4">Probability vs Likelihood</A>
- - <DT><A HREF="https://www.youtube.com/watch?v=XepXtl9YKwc">Maximum Likelihood</A>
  - <DT><A HREF="https://www.youtube.com/watch?v=Dn6b9fCIUpM">Maximum Likelihood For the Normal Distribution, step-by-step!</A>
  - <DT><A HREF="https://www.youtube.com/watch?v=O2L2Uv9pdDA">Naive Bayes</A>
  - <DT><A HREF="https://www.youtube.com/watch?v=sHRBg6BhKjI">Why Dividing By N Underestimates the Variance</A>
@@ -44,6 +43,12 @@ These videos work really well when you wanna take a break between your intense i
 
 ### Distributions
  - <DT><A HREF="https://www.youtube.com/watch?v=5ptp4naoYEo">(1) Exponential and Laplace Distributions</A>
+ - Gamma
+ - Exponential
+ - Students' T
+ 
+### Fitting data
+ - <DT><A HREF="https://towardsdatascience.com/6-ways-to-test-for-a-normal-distribution-which-one-to-use-9dcf47d8fa93">6 ways to test for a Normal Distribution — which one to use? (Kolmogorov Smirnov test, Shapiro Wilk test)</A>
  
  
 ### Inferential Statistics
