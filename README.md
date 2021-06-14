@@ -14,6 +14,7 @@ These videos work really well when you wanna take a break between your intense i
 
 **P.S. Ctrl+F to serach for relevant keywords.**
 
+##### Courses & Resources
 <DT><A HREF="https://towardsdatascience.com/top-10-resources-to-become-a-data-scientist-in-2020-99a315194701">Become a Data Scientist in 2020 with these 10 resources</A>
 <DT><A HREF="https://www.coursera.org/specializations/data-science-python?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-_4L3mvw.I6oY9SNPHAtR2Q&siteID=lVarvwc5BD0-_4L3mvw.I6oY9SNPHAtR2Q&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0">Applied Data Science with Python | Coursera</A>
 <DT><A HREF="https://towardsdatascience.com/minimal-pandas-subset-for-data-scientists-6355059629ae">Minimal Pandas Subset for Data Scientists - Towards Data Science</A>
@@ -24,28 +25,42 @@ These videos work really well when you wanna take a break between your intense i
 <DT><A HREF="https://www.coursera.org/specializations/deep-learning?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-m3SBadPJeg1Z1rWVng39OQ&siteID=lVarvwc5BD0-m3SBadPJeg1Z1rWVng39OQ&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0">Deep Learning | Coursera</A>
 <DT><A HREF="https://www.coursera.org/learn/deep-neural-networks-with-pytorch?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-Kb0qPiTtTFPC3kMQZlnqpg&siteID=lVarvwc5BD0-Kb0qPiTtTFPC3kMQZlnqpg&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0">Deep Neural Networks with PyTorch | Coursera</A>
 
-
-
-<DT><A HREF="https://www.youtube.com/watch?v=wpNl-JwwplA">StatQuest: Decision Trees, Part 2 - Feature Selection and Missing Data - YouTube</A>
-<DT><A HREF="https://www.youtube.com/watch?v=D0efHEJsfHo">How to Prune Regression Trees, Clearly Explained!!! - YouTube</A>
-<DT><A HREF="https://www.youtube.com/watch?v=LsK-xG1cLYA">AdaBoost, Clearly Explained - YouTube</A>
-<DT><A HREF="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ">StatQuest: Random Forests Part 1 - Building, Using and Evaluating - YouTube</A>
+##### Probablility
+<DT><A HREF="https://www.youtube.com/watch?v=pYxNSUDSFH4">StatQuest: Probability vs Likelihood - YouTube</A>
+<DT><A HREF="https://www.youtube.com/watch?v=O2L2Uv9pdDA">Naive Bayes, Clearly Explained!!! - YouTube</A>
+ 
+##### Inferential Statistics
+<DT><A HREF="https://www.youtube.com/watch?v=DEkPZv5ppHI">Z-Statistics vs. T-Statistics</A>
 <DT><A HREF="https://www.youtube.com/watch?v=0oc49DyA3hU">Hypothesis Testing and The Null Hypothesis - YouTube</A>
 <DT><A HREF="https://www.youtube.com/watch?v=vemZtEM63GY">p-values: What they are and how to interpret them - YouTube</A>
 <DT><A HREF="https://www.youtube.com/watch?v=5koKb5B_YWo">Alternative Hypotheses: Main Ideas!!! - YouTube</A>
-<DT><A HREF="https://www.youtube.com/watch?v=pYxNSUDSFH4">StatQuest: Probability vs Likelihood - YouTube</A>
-<DT><A HREF="https://www.youtube.com/watch?v=O2L2Uv9pdDA">Naive Bayes, Clearly Explained!!! - YouTube</A>
 <DT><A HREF="https://www.youtube.com/watch?v=VK-rnA3-41c">Intro to Hypothesis Testing in Statistics - Hypothesis Testing Statistics Problems &amp; Examples - YouTube</A>
-<DT><A HREF="https://www.youtube.com/watch?v=Xm2C_gTAl8c">Ridge vs Lasso Regression, Visualized!!! - YouTube</A>
+<DT><A HREF="https://www.youtube.com/watch?v=dpGmVV0-4jc">Idea behind hypothesis testing | Probability and Statistics | Khan Academy - YouTube</A>
+<DT><A HREF="https://www.youtube.com/watch?v=YSwmpAmLV2s">Null Hypothesis, p-Value, Statistical Significance, Type 1 Error and Type 2 Error - YouTube</A>
+<DT><A HREF="https://www.youtube.com/watch?v=_3_6wjycJdk">Examples of null and alternative hypotheses | AP Statistics | Khan Academy - YouTube</A>
 <DT><A HREF="https://www.youtube.com/watch?v=TqOeMYtOc1w">StatQuest: Confidence Intervals - YouTube</A>
 <DT><A HREF="https://www.youtube.com/watch?v=KS6KEWaoOOE">P-values and significance tests | AP Statistics | Khan Academy - YouTube</A>
 <DT><A HREF="https://www.youtube.com/watch?v=JQc3yx0-Q9E">How to calculate p-values - YouTube</A>
-<DT><A HREF="https://www.youtube.com/watch?v=dpGmVV0-4jc">Idea behind hypothesis testing | Probability and Statistics | Khan Academy - YouTube</A>
-<DT><A HREF="https://www.youtube.com/watch?v=YSwmpAmLV2s">Null Hypothesis, p-Value, Statistical Significance, Type 1 Error and Type 2 Error - YouTube</A>
+
+##### Decision Trees & Random Forests
+<DT><A HREF="https://www.youtube.com/watch?v=q90UDEgYqeI">Decision Trees in Python from Start to Finish - YouTube</A>
+<DT><A HREF="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ">StatQuest: Random Forests Part 1 - Building, Using and Evaluating - YouTube</A>
+ 
+ 
+##### Regression
+<DT><A HREF="https://www.youtube.com/watch?v=Xm2C_gTAl8c">Ridge vs Lasso Regression, Visualized!!! - YouTube</A>
+ 
+<DT><A HREF="https://www.youtube.com/watch?v=wpNl-JwwplA">StatQuest: Decision Trees, Part 2 - Feature Selection and Missing Data - YouTube</A>
+<DT><A HREF="https://www.youtube.com/watch?v=D0efHEJsfHo">How to Prune Regression Trees, Clearly Explained!!! - YouTube</A>
+<DT><A HREF="https://www.youtube.com/watch?v=LsK-xG1cLYA">AdaBoost, Clearly Explained - YouTube</A>
+
+
+
+
 <DT><A HREF="https://www.youtube.com/watch?v=HMOI_lkzW08">StatQuest: PCA main ideas in only 5 minutes!!! - YouTube</A>
 <DT><A HREF="https://www.youtube.com/watch?v=efR1C6CvhmE">Support Vector Machines, Clearly Explained!!! - YouTube</A>
-<DT><A HREF="https://www.youtube.com/watch?v=_3_6wjycJdk">Examples of null and alternative hypotheses | AP Statistics | Khan Academy - YouTube</A>
-<DT><A HREF="https://www.youtube.com/watch?v=q90UDEgYqeI">Decision Trees in Python from Start to Finish - YouTube</A>
+
+
 <DT><A HREF="https://www.youtube.com/watch?v=qtaqvPAeEJY">Covariance and Correlation Part 1: Covariance - YouTube</A>
 <DT><A HREF="https://www.youtube.com/watch?v=7YuTmLvs1Dc">Data Science Interview Questions | Data Science Interview Questions and Answers with Tips - YouTube</A>
 <DT><A HREF="https://www.youtube.com/watch?v=yIYKR4sgzI8">StatQuest: Logistic Regression - YouTube</A>
