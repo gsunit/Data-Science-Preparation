@@ -57,6 +57,12 @@ These videos work really well when you wanna take a break between your intense i
   <ul>
    <li> 0 <= p-value <= 1
    <li> The closer the p-value to 0, the more the confidence that the null hypothesis (that there is no difference between two things) is false.
+   <li> Threshold for making the decision: 0.05. This means that if there is no difference between the two things, then and the same experiment is repeated a bunch of times, then only 5% of them would yield a wrong decision.
+   <li> In essence, 5% of the experiments, where the differences come from weird random things, will generate a p-value less that 0.05.
+   <li> Thus, we should obtain large p-values if the two things being compared are identical.
+   <li> Getting a small p-value even when there is no difference is known as a False positive.'
+   <li> If it is extremely important when we say that the two things are different, we use a smaller threshold like 0.1%.
+   <li> A small p-value does not imply that the difference between the two things is large.
   </ul>
 </details>
 
