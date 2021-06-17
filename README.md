@@ -69,16 +69,17 @@ These videos work really well when you wanna take a break between your intense i
  - [ ] <A HREF="https://www.youtube.com/watch?v=DEkPZv5ppHI">Z-Statistics vs. T-Statistics</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=zJ8e_wAWUzE">Hypothesis Testing Problems Z Test & T Statistics One & Two Tailed Tests 2</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=0oc49DyA3hU">Hypothesis Testing and The Null Hypothesis</A>
+
+ - [ ] <A HREF="https://www.youtube.com/watch?v=JQc3yx0-Q9E">How to calculate p-values</A>
+ - [ ] <A HREF="https://www.youtube.com/watch?v=5Z9OIYA8He8">P Values, clearly explained</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=vemZtEM63GY">p-values: What they are and how to interpret them</A>
- - [ ] <A HREF="https://www.youtube.com/watch?v=5koKb5B_YWo">Alternative Hypotheses: Main Ideas</A>
+
  - [ ] <A HREF="https://www.youtube.com/watch?v=VK-rnA3-41c">Intro to Hypothesis Testing in Statistics - Hypothesis Testing Statistics Problems &amp; Examples</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=dpGmVV0-4jc">Idea behind hypothesis testing | Probability and Statistics</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=YSwmpAmLV2s">Null Hypothesis, p-Value, Statistical Significance, Type 1 Error and Type 2 Error</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=_3_6wjycJdk">Examples of null and alternative hypotheses | AP Statistics</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=TqOeMYtOc1w">Confidence Intervals</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=KS6KEWaoOOE">P-values and significance tests | AP Statistics</A>
- - [ ] <A HREF="https://www.youtube.com/watch?v=JQc3yx0-Q9E">How to calculate p-values</A>
- - [ ] <A HREF="https://www.youtube.com/watch?v=5Z9OIYA8He8">P Values</A>
  - [ ] <A HREF="https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf">Feature selection — Correlation and P-value | by Vishal R | Towards Data Science</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=hpWdDmgsIRE">Contingency table chi-square test | Probability and Statistics</A>
 
