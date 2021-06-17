@@ -52,6 +52,13 @@ These videos work really well when you wanna take a break between your intense i
  
  
 ### Inferential Statistics
+<details>
+  <summary>P-values</summary>
+  <ul>
+   <li> 0 <= p-value <= 1
+   <li> The closer the p-value to 0, the more the confidence that the null hypothesis (that there is no difference between two things) is false.
+  </ul>
+</details>
  - [ ] <A HREF="https://www.youtube.com/watch?v=DEkPZv5ppHI">Z-Statistics vs. T-Statistics</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=zJ8e_wAWUzE">Hypothesis Testing Problems Z Test & T Statistics One & Two Tailed Tests 2</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=0oc49DyA3hU">Hypothesis Testing and The Null Hypothesis</A>
