@@ -100,8 +100,10 @@ These videos work really well when you wanna take a break between your intense i
    <li> Specificity = 1 - False Positive Rate = 1 - FP/(FP+TN) = TN/(FP+TN)
    <li> Precision =  TP/(TP+FP)
    <li> Recall = TP/(TP+FN)
+   <li> F1-score = 2*Precision*Recall/(Precision + Recall)
   </ul>
 </details>
+
  - [ ] <A HREF="https://www.youtube.com/watch?v=4jRBRDbJemM">ROC and AUC!</A>
  - [ ] <A HREF="https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/">How to Use ROC Curves and Precision-Recall Curves for Classification in Python</A>
  - F1 score, specificity, sensitivity
