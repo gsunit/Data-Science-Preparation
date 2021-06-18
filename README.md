@@ -93,6 +93,15 @@ These videos work really well when you wanna take a break between your intense i
  - [ ] <A HREF="https://www.youtube.com/watch?v=2AQKmw14mHM">R-squared explained</A>
  
 ### Precision, Recall
+<details>
+  <summary>Important Formulae</summary>
+  <ul>
+   <li> Sensitivity = True Positive Rate = TP/(TP+FN)
+   <li> Specificity = 1 - False Positive Rate = 1 - FP/(FP+TN) = TN/(FP+TN)
+   <li> Precision =  TP/(TP+FP)
+   <li> Recall = TP/(TP+FN)
+  </ul>
+</details>
  - [ ] <A HREF="https://www.youtube.com/watch?v=4jRBRDbJemM">ROC and AUC!</A>
  - [ ] <A HREF="https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/">How to Use ROC Curves and Precision-Recall Curves for Classification in Python</A>
  - F1 score, specificity, sensitivity
