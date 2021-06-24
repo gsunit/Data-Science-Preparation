@@ -66,15 +66,30 @@ These videos work really well when you wanna take a break between your intense i
   </ul>
 </details>
 
+<details>
+  <summary>Error Types</summary>
+  <ul>
+   <li> Type-1 error: Incorrectly reject null (False positive)
+   <li> Alpha: Prob(type-1 error) (aka level of significance)
+   <li> Type-2 error: Fail to reject when you should have rejected null hypothesis (False negative)
+   <li> Beta: Prob(type-2 error)
+   <li> Power: Prob(Finding difference between when when it truly exists) = 1 - beta
+   <li> Having power > 80% for a study is good. Calculated before study is conducted based on projections.
+   <li> P-value: Prob(obtaining a result as extreme as the current one, assuming null is true)
+   <li> Low p-value -> reject null hypothesis, high p-value -> fail to reject hypothesis
+   <li> If p-value < alpha -> study was statistically significant. Alpha = 0.05 usually
+  </ul>
+</details>
+
  - [ ] <A HREF="https://www.youtube.com/watch?v=DEkPZv5ppHI">Z-Statistics vs. T-Statistics</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=zJ8e_wAWUzE">Hypothesis Testing Problems Z Test & T Statistics One & Two Tailed Tests 2</A>
+ - [ ] <A HREF="https://www.youtube.com/watch?v=YSwmpAmLV2s">Null Hypothesis, p-Value, Statistical Significance, Type 1 Error and Type 2 Error</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=0oc49DyA3hU">Hypothesis Testing and The Null Hypothesis</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=JQc3yx0-Q9E">How to calculate p-values</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=5Z9OIYA8He8">P Values, clearly explained</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=vemZtEM63GY">p-values: What they are and how to interpret them</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=VK-rnA3-41c">Intro to Hypothesis Testing in Statistics - Hypothesis Testing Statistics Problems &amp; Examples</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=dpGmVV0-4jc">Idea behind hypothesis testing | Probability and Statistics</A>
- - [ ] <A HREF="https://www.youtube.com/watch?v=YSwmpAmLV2s">Null Hypothesis, p-Value, Statistical Significance, Type 1 Error and Type 2 Error</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=_3_6wjycJdk">Examples of null and alternative hypotheses | AP Statistics</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=TqOeMYtOc1w">Confidence Intervals</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=KS6KEWaoOOE">P-values and significance tests | AP Statistics</A>
