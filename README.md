@@ -138,7 +138,8 @@ These videos work really well when you wanna take a break between your intense i
  - [ ] <A HREF="https://www.youtube.com/watch?v=vMh0zPT0tLI">Stochastic Gradient Descent</A>
  
 ### Decision Trees & Random Forests
- - [ ] <A HREF="https://www.youtube.com/watch?v=q90UDEgYqeI">Decision Trees in Python from Start to Finish</A>
+ - [ ] <A HREF="https://www.youtube.com/watch?v=_L39rN6gz7Y">Decision and Classification Trees</A>
+ - [ ] <A HREF="https://www.youtube.com/watch?v=g9c66TUylZ4">Regression Trees</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=wpNl-JwwplA">Decision Trees, Part 2 - Feature Selection and Missing Data</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=D0efHEJsfHo">How to Prune Regression Trees</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ">Random Forests Part 1 - Building, Using and Evaluating</A>
