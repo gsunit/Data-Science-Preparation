@@ -143,7 +143,6 @@ These videos work really well when you wanna take a break between your intense i
  - [ ] <A HREF="https://www.youtube.com/watch?v=wpNl-JwwplA">Decision Trees, Part 2 - Feature Selection and Missing Data</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=D0efHEJsfHo">How to Prune Regression Trees</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ">Random Forests Part 1 - Building, Using and Evaluating</A>
- - [ ] <A HREF="https://www.youtube.com/watch?v=g9c66TUylZ4">Regression Trees</A>
  - [ ] <A HREF="https://www.geeksforgeeks.org/python-decision-tree-regression-using-sklearn/?ref=rp">Python | Decision Tree Regression using sklearn - GeeksforGeeks</A>
  
 ### Loss functions
@@ -178,6 +177,9 @@ These videos work really well when you wanna take a break between your intense i
  - [ ] <A HREF="https://www.youtube.com/watch?v=4b5d3muPQmA">K-means clustering</A>
 
 ### Neural Networks
+ - [ ] <A HREF="https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/">Train-test splitting, Stratification</A>
+ - [ ] <A HREF="https://www.analyticsvidhya.com/blog/2018/04/fundamentals-deep-learning-regularization-techniques/">Regularization, Dropout, Early Stopping</A>
+ - [ ] <A HREF="https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/">Train-test splitting, Stratification</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=m8pOnJxOcqY">Convolution Neural Networks - EXPLAINED</A>
 
 ### Feature Transformation
