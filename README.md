@@ -28,6 +28,8 @@ These videos work really well when you wanna take a break between your intense i
  - [ ] <A HREF="http://www.holehouse.org/mlclass/">Machine Learning - complete course notes</A>
 
 ### SQL
+Quickly go through the tutorial pages, you need not cram anything. Soon after, solve all the Hackerrank questions (in sequence, without skipping). Refer back to any of the tutorials or look up the discussion forum when stuck. You will learn more effectively this way and applying the various clauses will boost your recall.
+
 - [ ] <A HREF="https://www.w3schools.com/sql/default.asp">SQL Tutorial Series</A>
 - [ ] <A HREF="https://www.hackerrank.com/domains/sql">Hackerrank SQL Practice Questions</A>
 
