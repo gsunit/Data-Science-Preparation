@@ -27,6 +27,10 @@ These videos work really well when you wanna take a break between your intense i
  - [ ] <A HREF="https://www.youtube.com/watch?v=7YuTmLvs1Dc">Data Science Interview Questions | Data Science Interview Questions and Answers with Tips</A>
  - [ ] <A HREF="http://www.holehouse.org/mlclass/">Machine Learning - complete course notes</A>
 
+### SQL
+- [ ] <A HREF="https://www.w3schools.com/sql/default.asp">SQL Tutorial Series</A>
+- [ ] <A HREF="https://www.hackerrank.com/domains/sql">Hackerrank SQL Practice Questions</A>
+
 ### Probablility
  - [ ] <A HREF="https://www.youtube.com/watch?v=pYxNSUDSFH4">Probability vs Likelihood</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=Dn6b9fCIUpM">Maximum Likelihood For the Normal Distribution, step-by-step!</A>
