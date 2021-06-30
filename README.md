@@ -85,17 +85,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
    <li> If p-value < alpha -> study was statistically significant. Alpha = 0.05 usually
   </ul>
 </details>
- 
-<details>
-  <summary>Statistical Tests</summary>
-  <ul>
-   <li> t-Test: compares 2 means
-   <li> ANOVA test: compares >2 means
-   <li> Chi-squared test: compares categorical variables
-   <li> Shapiro Wilk test: test if a random sample comes from a normal distribution
-   <li> Kolmogorov-Smirnov Goodness of Fit test: compares data with a known distribution to check if they have the same distribution
-  </ul> 
-</details>
+
  
  - [ ] <A HREF="https://www.youtube.com/watch?v=YSwmpAmLV2s">Null Hypothesis, p-Value, Statistical Significance, Type 1 Error and Type 2 Error</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=0oc49DyA3hU">Hypothesis Testing and The Null Hypothesis</A>
@@ -110,6 +100,49 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] <A HREF="https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf">Feature selection — Correlation and P-value | by Vishal R | Towards Data Science</A>
  
 ### Statistical Tests
+
+ <details>
+  <summary>Statistical Tests Notes</summary>
+  <ul>
+   <li> t-Test: compares 2 means. Works well when sample size is small. We esimate popl_std by sample_std.
+    
+    We are less confident that the distribution resembles normal dist. As sample size increases, it approches normal dist (at about n~=30)
+        
+    t-value = signal/noise = (absolute diff bet two means)/(variability of groups) = | x1 - x2 | / sqrt(s1^2/n1  +  s2^2/n2)
+        
+    Thus, increasing variance will give you more noise. Increasing #samples will decrease the noise.
+        
+    Degrees of freedom (DOF) = n1 + n2 - 2
+    
+    if t-value > critical value (from table) => reject hypothesis (found a statistically significant diff bet two means) 
+    
+    Independent (unpaired) samples means that two separate populations used to take samples. Paired samples means samples taken from the same population, and now we are comparing two means.
+    
+    In a two tailed test, we are not sure which direction the variance will be. Considering alpha=0.05, the 0.05 is split into 0.025 on both of the tails. In the middle is the remaining 0.95. Run a one-tailed test if sure about the directionality.
+    
+    Calculating t-statistic when comparing sample mean with an already known mean. t-statistic = 
+    
+   <li> Z-test: 
+    
+    Uses a normal distribution
+    
+    (mu, sigma) are population statistics. (x_bar, s) are sample statistics. 
+    
+    z-score = (x-mu)/sigma
+    z-statistic = (x_bar - mu)/ sqrt(sigma^2/n)
+    t-statistic = (x_bar - mu)/ sqrt(s^2/n)
+    
+    Use z-stat when pop_std (sigma) is known and n>=30. Otherwise use t-stat.
+    
+    
+   <li> ANOVA test: compares >2 means
+   <li> Chi-squared test: compares categorical variables
+   <li> Shapiro Wilk test: test if a random sample comes from a normal distribution
+   <li> Kolmogorov-Smirnov Goodness of Fit test: compares data with a known distribution to check if they have the same distribution
+  </ul> 
+</details>
+
+ - [ ] <A HREF="https://www.youtube.com/watch?v=pTmLQvMM-1M">Student's t-test</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=DEkPZv5ppHI">Z-Statistics vs. T-Statistics</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=zJ8e_wAWUzE">Hypothesis Testing Problems Z Test & T Statistics One & Two Tailed Tests 2</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=hpWdDmgsIRE">Contingency table chi-square test | Probability and Statistics</A>
