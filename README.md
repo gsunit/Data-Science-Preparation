@@ -205,9 +205,37 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] <A HREF="https://www.youtube.com/watch?v=azXCzI57Yfc">Linear Discriminant Analysis (LDA) clearly explained.</A>
  
 ### Boosting
+ 
+ <details>
+  <summary>Adaboost Notes</summary>
+  <ul>
+   <li> Adaboost: Combines a lot of "weak learners" to make decisions.
+    
+    Single level decision trees (one root, two leaves), known as stumps.
+    
+    Each stump has a weighted say in voting (as opposed to random forests where each tree has an equal vote).
+    
+    Errors that the first stump makes, influences how the second stump is made. Thus, order is important (as opposed to random forests where each tree is made independent of the others, doesnt matter the order in which trees are made)
+    
+    First all samples are given a weight (equal weights initially). Then first stump is made based on which feature classifies the best (feature with lowest Gini index chosen). Now to decide stump's weight in final classification, we calculate the following. When stump does a good job, amount_of_say is closer to 1.
+    
+    total_error = sum(weights of samples incorrectly classified)
+    amount_of_say = 0.5log( (1-total_error)/total_error )
+    
+    Now modify the weights so that the next stump learns from the mistakes. We want increase the significance of correctly classifying the samples that were wronged earlier.
+    
+    new_sample_weight = sample_weight * exp(amount_of_say) => increased sample weight
+    new_sample_weight = sample_weight * exp(-amount_of_say) => decreased sample weight
+    
+    Then normalize new_sample_weights. Then create a new collection by sampling records, but with a greater probablilty of picking those which were wrongly classified earlier. This is where you can use new_sample_weights (normalized). After re-sampling is done, assign equal weights to all samples and repeat for finding second stump. 
+    
+  </ul>
+</details>
+
+ - [ ] <A HREF="https://www.youtube.com/watch?v=3CC4N4z3GJc">Gradient Boost Part 1: Regression Main Ideas</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=OtD8wVaFm6E">XGBoost Part 1: Regression</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=LsK-xG1cLYA">AdaBoost</A>
- - [ ] <A HREF="https://www.youtube.com/watch?v=3CC4N4z3GJc">Gradient Boost Part 1: Regression Main Ideas</A>
+ 
 
 ### Quantiles
  - [ ] <A HREF="https://www.youtube.com/watch?v=okjYjClSjOg">Quantile-Quantile Plots (QQ plots)</A>
