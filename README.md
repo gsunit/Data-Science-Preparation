@@ -96,11 +96,8 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
    <li> Kolmogorov-Smirnov Goodness of Fit test: compares data with a known distribution to check if they have the same distribution
   </ul> 
 </details>
-
- - [ ] <A HREF="https://www.youtube.com/watch?v=DEkPZv5ppHI">Z-Statistics vs. T-Statistics</A>
- - [ ] <A HREF="https://www.youtube.com/watch?v=zJ8e_wAWUzE">Hypothesis Testing Problems Z Test & T Statistics One & Two Tailed Tests 2</A>
+ 
  - [ ] <A HREF="https://www.youtube.com/watch?v=YSwmpAmLV2s">Null Hypothesis, p-Value, Statistical Significance, Type 1 Error and Type 2 Error</A>
- - [ ] <A HREF="https://towardsdatascience.com/6-ways-to-test-for-a-normal-distribution-which-one-to-use-9dcf47d8fa93">6 ways to test for a Normal Distribution — which one to use? (Kolmogorov Smirnov test, Shapiro Wilk test)</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=0oc49DyA3hU">Hypothesis Testing and The Null Hypothesis</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=JQc3yx0-Q9E">How to calculate p-values</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=5Z9OIYA8He8">P Values, clearly explained</A>
@@ -111,7 +108,12 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] <A HREF="https://www.youtube.com/watch?v=TqOeMYtOc1w">Confidence Intervals</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=KS6KEWaoOOE">P-values and significance tests | AP Statistics</A>
  - [ ] <A HREF="https://towardsdatascience.com/feature-selection-correlation-and-p-value-da8921bfb3cf">Feature selection — Correlation and P-value | by Vishal R | Towards Data Science</A>
+ 
+### Statistical Tests
+ - [ ] <A HREF="https://www.youtube.com/watch?v=DEkPZv5ppHI">Z-Statistics vs. T-Statistics</A>
+ - [ ] <A HREF="https://www.youtube.com/watch?v=zJ8e_wAWUzE">Hypothesis Testing Problems Z Test & T Statistics One & Two Tailed Tests 2</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=hpWdDmgsIRE">Contingency table chi-square test | Probability and Statistics</A>
+ - [ ] <A HREF="https://towardsdatascience.com/6-ways-to-test-for-a-normal-distribution-which-one-to-use-9dcf47d8fa93">6 ways to test for a Normal Distribution — which one to use? (Kolmogorov Smirnov test, Shapiro Wilk test)</A>
 
 ### Linear Regression & Logistic Regression
  - [ ] <A HREF="https://www.youtube.com/watch?v=yIYKR4sgzI8">Logistic Regression</A>
