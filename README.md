@@ -61,54 +61,47 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  
 ### Inferential Statistics
 
-:note:
-
-<details> :notebook:
+<details>
   <summary>Notes on p-values, statistical significance</summary>
-  <ul>
-   <li> p-values 
+ 
+ - p-values
+ 
+    - 0 <= p-value <= 1
+   
+    - The closer the p-value to 0, the more the confidence that the null hypothesis (that there is no difference between two things) is false.
+   
+    - `Threshold for making the decision`: 0.05. This means that if there is no difference between the two things, then and the same experiment is repeated a bunch of times, then only 5% of them would yield a wrong decision.
+   
+    - In essence, 5% of the experiments, where the differences come from weird random things, will generate a p-value less that 0.05.
+   
+    - Thus, we should obtain large p-values if the two things being compared are identical.
+   
+    - Getting a small p-value even when there is no difference is known as a False positive.'
+   
+    - If it is extremely important when we say that the two things are different, we use a smaller threshold like 0.1%.
+   
+    - A small p-value does not imply that the difference between the two things is large.
     
-    0 <= p-value <= 1
-   
-    The closer the p-value to 0, the more the confidence that the null hypothesis
-    (that there is no difference between two things) is false.
-   
-    Threshold for making the decision: 0.05. This means that if there is no difference between the two things,
-    then and the same experiment is repeated a bunch of times, then only 5% of them would yield a wrong decision.
-   
-    In essence, 5% of the experiments, where the differences come from weird random things,
-    will generate a p-value less that 0.05.
-   
-    Thus, we should obtain large p-values if the two things being compared are identical.
-   
-    Getting a small p-value even when there is no difference is known as a False positive.'
-   
-    If it is extremely important when we say that the two things are different,
-    we use a smaller threshold like 0.1%.
-   
-    A small p-value does not imply that the difference between the two things is large.
+ - Error Types
     
-   <li> Error Types
+    - `Type-1 error`: Incorrectly reject null (False positive)
+   
+    - `Alpha`: Prob(type-1 error) (aka level of significance)
+   
+    - `Type-2 error`: Fail to reject when you should have rejected null hypothesis (False negative)
+   
+    - `Beta`: Prob(type-2 error)
+   
+    - `Power`: Prob(Finding difference between when when it truly exists) = 1 - beta
+   
+    - Having power > 80% for a study is good. Calculated before study is conducted based on projections.
+   
+    - `P-value`: Prob(obtaining a result as extreme as the current one, assuming null is true)
+   
+    - Low p-value -> reject null hypothesis, high p-value -> fail to reject hypothesis
+   
+    - If p-value < alpha -> study was statistically significant. Alpha = 0.05 usually
     
-    Type-1 error: Incorrectly reject null (False positive)
-   
-    Alpha: Prob(type-1 error) (aka level of significance)
-   
-    Type-2 error: Fail to reject when you should have rejected null hypothesis (False negative)
-   
-    Beta: Prob(type-2 error)
-   
-    Power: Prob(Finding difference between when when it truly exists) = 1 - beta
-   
-    Having power > 80% for a study is good. Calculated before study is conducted based on projections.
-   
-    P-value: Prob(obtaining a result as extreme as the current one, assuming null is true)
-   
-    Low p-value -> reject null hypothesis, high p-value -> fail to reject hypothesis
-   
-    If p-value < alpha -> study was statistically significant. Alpha = 0.05 usually
-    
-  </ul>
 </details>
 
  
