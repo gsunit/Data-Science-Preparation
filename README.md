@@ -24,8 +24,11 @@ These videos work really well when you wanna take a break between your intense i
  - [ ] <A HREF="https://www.coursera.org/specializations/aml?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-_1LkRNzPhJ43gzMHQzcbag&siteID=lVarvwc5BD0-_1LkRNzPhJ43gzMHQzcbag&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0">Advanced Machine Learning | Coursera</A>
  - [ ] <A HREF="https://www.coursera.org/specializations/deep-learning?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-m3SBadPJeg1Z1rWVng39OQ&siteID=lVarvwc5BD0-m3SBadPJeg1Z1rWVng39OQ&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0">Deep Learning | Coursera</A>
  - [ ] <A HREF="https://www.coursera.org/learn/deep-neural-networks-with-pytorch?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-Kb0qPiTtTFPC3kMQZlnqpg&siteID=lVarvwc5BD0-Kb0qPiTtTFPC3kMQZlnqpg&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0">Deep Neural Networks with PyTorch | Coursera</A>
- - [ ] <A HREF="https://www.youtube.com/watch?v=7YuTmLvs1Dc">Data Science Interview Questions | Data Science Interview Questions and Answers with Tips</A>
  - [ ] <A HREF="http://www.holehouse.org/mlclass/">Machine Learning - complete course notes</A>
+
+### Data Science Practice Questions
+If you are clueless about which topic to start from in data science, but have some basic idea about ML, then simply give these questions a go. If you get a bunch of them wrong, you'll know where to start your preparation :)
+- [ ] <A HREF="https://www.youtube.com/watch?v=7YuTmLvs1Dc">Data Science Interview Questions | Data Science Interview Questions and Answers with Tips</A>
 
 ### SQL
 Quickly go through the tutorial pages, you need not cram anything. Soon after, solve all the Hackerrank questions (in sequence, without skipping). Refer back to any of the tutorials or look up the discussion forum when stuck. You will learn more effectively this way and applying the various clauses will boost your recall.
@@ -33,7 +36,10 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 - [ ] <A HREF="https://www.w3schools.com/sql/default.asp">SQL Tutorial Series</A>
 - [ ] <A HREF="https://www.hackerrank.com/domains/sql">Hackerrank SQL Practice Questions</A>
 
-### Probablility
+### Probability
+//TODO: add probability resources here. Accepting PRs.
+
+### Statistics
  - [ ] <A HREF="https://www.youtube.com/watch?v=pYxNSUDSFH4">Probability vs Likelihood</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=Dn6b9fCIUpM">Maximum Likelihood For the Normal Distribution, step-by-step!</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=O2L2Uv9pdDA">Naive Bayes</A>
