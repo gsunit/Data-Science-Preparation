@@ -1,18 +1,17 @@
 # Data Science Preparation
 
+**P.S. Ctrl+F to serach for relevant keywords.**
+
 ### Preliminaries
 
- - If you are just beginning with ML & Data Science, a good first place to start will be [Andrew Ng Coursera ML course](https://www.coursera.org/learn/machine-learning). Finish at least the first few weeks.
+If you are just beginning with ML & Data Science, a good first place to start will be 
+ - [ ] [Andrew Ng Coursera ML course](https://www.coursera.org/learn/machine-learning). Finish at least the first few weeks.
 
- - If you have already done the Andrew Ng course, you might want to brush up on the concepts through these notes. [Stanford Machine Learning, holehouse.org](https://www.holehouse.org/mlclass/)
+If you have already done the Andrew Ng course, you might want to brush up on the concepts through these notes.
+ - [ ] [Notes on Andrew Ng Machine Learning](https://www.holehouse.org/mlclass/)
 
- - If you want to make a list of important interview topics head over to this article. [Machine Learning Cheatsheet](https://medium.com/swlh/cheat-sheets-for-machine-learning-interview-topics-51c2bc2bab4f)
-
-### Video resources
-
-These videos work really well when you wanna take a break between your intense interview prep or at bedtime when you just want something to scroll at. Now you may proceed binge-watching these ML/Data Science videos. Enjoy :)
-
-**P.S. Ctrl+F to serach for relevant keywords.**
+If you want to make a list of important interview topics head over to this article.
+ - [ ] [Machine Learning Cheatsheet](https://medium.com/swlh/cheat-sheets-for-machine-learning-interview-topics-51c2bc2bab4f)
 
 ### Courses & Resources
  - [ ] <A HREF="https://towardsdatascience.com/top-10-resources-to-become-a-data-scientist-in-2020-99a315194701">Become a Data Scientist in 2020 with these 10 resources</A>
@@ -234,9 +233,11 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 ### Boosting
  
  <details>
-  <summary>Adaboost Notes</summary>
+  <summary>Notes on Adaboost, Gradient Boosting, XGBoost</summary>
   <ul>
-   <li> Adaboost: Combines a lot of "weak learners" to make decisions.
+   <li> Adaboost
+    
+    Combines a lot of "weak learners" to make decisions.
     
     Single level decision trees (one root, two leaves), known as stumps.
     
@@ -263,7 +264,28 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
     picking those which were wrongly classified earlier. This is where you can use new_sample_weights (normalized).
     After re-sampling is done, assign equal weights to all samples and repeat for finding second stump. 
     
+   <li> Gradient Boost
+    
+    Starts by making a single leaf instead of a stump. Considering regression, leaf contains average of target variable as initial prediction.
+    
+    Then build a tree (usu with 8 to 32 leaves). All trees are scaled equally (unlike AdaBoost where trees are weighted while prediciton)
+    
+    The successive trees are also based on previous errors like AdaBoost.
+    
+    Using initial prediction, calculate distance from actual target values, call them residuals, and store them.
+    
+    Now use the features to predict the residuals. The average of the values that finally end up in the same leaf is used as the
+    predicted regression value for that leaf (this is true when the underlying loss function to be minimized is the squared residual fn.)
+    
+    Then 
+    new_prediction = initial_prediction + learning_rate*result_from_tree1
+    new_residual = target_value - new_prediction
+    
+    new_residual will be smaller than old_residual, thus we are taking small steps towards learning to predict target_value accurately
+    
+    Train new tree on the new_residual, add the result_from_tree2*learning_rate to new_prediction to update it. Rinse and repeat.
   </ul>
+  
 </details>
 
  - [ ] <A HREF="https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/">Gradient Boost, Learning Rate Shrinkage</A>
