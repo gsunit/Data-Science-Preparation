@@ -25,10 +25,10 @@ These videos work really well when you wanna take a break between your intense i
  - [ ] <A HREF="https://www.coursera.org/specializations/deep-learning?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-m3SBadPJeg1Z1rWVng39OQ&siteID=lVarvwc5BD0-m3SBadPJeg1Z1rWVng39OQ&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0">Deep Learning | Coursera</A>
  - [ ] <A HREF="https://www.coursera.org/learn/deep-neural-networks-with-pytorch?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-Kb0qPiTtTFPC3kMQZlnqpg&siteID=lVarvwc5BD0-Kb0qPiTtTFPC3kMQZlnqpg&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0">Deep Neural Networks with PyTorch | Coursera</A>
  - [ ] <A HREF="http://www.holehouse.org/mlclass/">Machine Learning - complete course notes</A>
+ - [ ] <A HREF="https://www.youtube.com/watch?v=7YuTmLvs1Dc">Data Science Interview Questions | Data Science Interview Questions and Answers with Tips</A>
 
 ### Data Science Practice Questions
 If you are clueless about which topic to start from in data science, but have some basic idea about ML, then simply give these questions a go. If you get a bunch of them wrong, you'll know where to start your preparation :)
-- [ ] <A HREF="https://www.youtube.com/watch?v=7YuTmLvs1Dc">Data Science Interview Questions | Data Science Interview Questions and Answers with Tips</A>
 
 ### SQL
 Quickly go through the tutorial pages, you need not cram anything. Soon after, solve all the Hackerrank questions (in sequence, without skipping). Refer back to any of the tutorials or look up the discussion forum when stuck. You will learn more effectively this way and applying the various clauses will boost your recall.
@@ -40,6 +40,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 //TODO: add probability resources here. Accepting PRs.
 
 ### Statistics
+
  - [ ] <A HREF="https://www.youtube.com/watch?v=pYxNSUDSFH4">Probability vs Likelihood</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=Dn6b9fCIUpM">Maximum Likelihood For the Normal Distribution, step-by-step!</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=O2L2Uv9pdDA">Naive Bayes</A>
@@ -67,13 +68,25 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
   <summary>P-values</summary>
   <ul>
    <li> 0 <= p-value <= 1
-   <li> The closer the p-value to 0, the more the confidence that the null hypothesis (that there is no difference between two things) is false.
-   <li> Threshold for making the decision: 0.05. This means that if there is no difference between the two things, then and the same experiment is repeated a bunch of times, then only 5% of them would yield a wrong decision.
-   <li> In essence, 5% of the experiments, where the differences come from weird random things, will generate a p-value less that 0.05.
-   <li> Thus, we should obtain large p-values if the two things being compared are identical.
-   <li> Getting a small p-value even when there is no difference is known as a False positive.'
-   <li> If it is extremely important when we say that the two things are different, we use a smaller threshold like 0.1%.
-   <li> A small p-value does not imply that the difference between the two things is large.
+   
+    The closer the p-value to 0, the more the confidence that the null hypothesis
+    (that there is no difference between two things) is false.
+   
+    Threshold for making the decision: 0.05. This means that if there is no difference between the two things,
+    then and the same experiment is repeated a bunch of times, then only 5% of them would yield a wrong decision.
+   
+    In essence, 5% of the experiments, where the differences come from weird random things,
+    will generate a p-value less that 0.05.
+   
+    Thus, we should obtain large p-values if the two things being compared are identical.
+   
+    Getting a small p-value even when there is no difference is known as a False positive.'
+   
+    If it is extremely important when we say that the two things are different,
+    we use a smaller threshold like 0.1%.
+   
+    A small p-value does not imply that the difference between the two things is large.
+    
   </ul>
 </details>
 
@@ -276,3 +289,4 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 ### Python Pandas
  - [ ] <A HREF="https://www.youtube.com/watch?v=txMdrV1Ut64">(2) Python Pandas Tutorial (Part 8): Grouping and Aggregating - Analyzing and Exploring Your Data</A>
  - [ ] <A HREF="https://www.youtube.com/watch?v=zmdjNSmRXF4&list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS&index=2">(2) Python Pandas Tutorial (Part 2): DataFrame and Series Basics - Selecting Rows and Columns</A>
+
