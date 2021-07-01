@@ -121,8 +121,8 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 
  <details>
   <summary>Statistical Tests Notes</summary>
-  <ul>
-   <li> t-Test: compares 2 means. Works well when sample size is small. We esimate popl_std by sample_std.
+  
+   - t-Test: compares 2 means. Works well when sample size is small. We esimate popl_std by sample_std.
     
     We are less confident that the distribution resembles normal dist. As sample size increases, it approches normal dist (at about n~=30)
         
@@ -140,7 +140,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
     
     Calculating t-statistic when comparing sample mean with an already known mean. t-statistic = 
     
-   <li> Z-test: 
+   - Z-test: 
     
     Uses a normal distribution
     
@@ -153,11 +153,11 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
     Use z-stat when pop_std (sigma) is known and n>=30. Otherwise use t-stat.
     
     
-   <li> ANOVA test: compares >2 means
-   <li> Chi-squared test: compares categorical variables
-   <li> Shapiro Wilk test: test if a random sample comes from a normal distribution
-   <li> Kolmogorov-Smirnov Goodness of Fit test: compares data with a known distribution to check if they have the same distribution
-  </ul> 
+   - ANOVA test: compares >2 means
+   - Chi-squared test: compares categorical variables
+   - Shapiro Wilk test: test if a random sample comes from a normal distribution
+   - Kolmogorov-Smirnov Goodness of Fit test: compares data with a known distribution to check if they have the same distribution
+ 
 </details>
 
  - [ ] [Student's t-test](https://www.youtube.com/watch?v=pTmLQvMM-1M)
@@ -180,13 +180,13 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 ### Precision, Recall
 <details>
   <summary>Important Formulae</summary>
-  <ul>
-   <li> Sensitivity = True Positive Rate = TP/(TP+FN)
-   <li> Specificity = 1 - False Positive Rate = 1 - FP/(FP+TN) = TN/(FP+TN)
-   <li> Precision =  TP/(TP+FP)
-   <li> Recall = TP/(TP+FN)
-   <li> F1-score = 2*Precision*Recall/(Precision + Recall)
-  </ul>
+  
+   - Sensitivity = True Positive Rate = TP/(TP+FN)
+   - Specificity = 1 - False Positive Rate = 1 - FP/(FP+TN) = TN/(FP+TN)
+   - Precision =  TP/(TP+FP)
+   - Recall = TP/(TP+FN)
+   - F1-score = 2*Precision*Recall/(Precision + Recall)
+
 </details>
 
  - [ ] [ROC and AUC!](https://www.youtube.com/watch?v=4jRBRDbJemM)
@@ -227,8 +227,8 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  
  <details>
   <summary>Notes on Adaboost, Gradient Boosting, XGBoost</summary>
-  <ul>
-   <li> Adaboost
+  
+   - Adaboost
     
     Combines a lot of "weak learners" to make decisions.
     
@@ -257,7 +257,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
     picking those which were wrongly classified earlier. This is where you can use new_sample_weights (normalized).
     After re-sampling is done, assign equal weights to all samples and repeat for finding second stump. 
     
-   <li> Gradient Boost
+   - Gradient Boost
     
     Starts by making a single leaf instead of a stump. Considering regression, leaf contains average of target variable as initial prediction.
     
@@ -277,7 +277,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
     new_residual will be smaller than old_residual, thus we are taking small steps towards learning to predict target_value accurately
     
     Train new tree on the new_residual, add the result_from_tree2*learning_rate to new_prediction to update it. Rinse and repeat.
-  </ul>
+
   
 </details>
 
