@@ -122,35 +122,37 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  <details>
   <summary>Statistical Tests Notes</summary>
   
-   - t-Test: compares 2 means. Works well when sample size is small. We esimate popl_std by sample_std.
+   - t-Test
+   
+      - compares 2 means. Works well when sample size is small. We esimate popl_std by sample_std.
     
-    We are less confident that the distribution resembles normal dist. As sample size increases, it approches normal dist (at about n~=30)
+      - We are less confident that the distribution resembles normal dist. As sample size increases, it approches normal dist (at about n~=30)
         
-    t-value = signal/noise = (absolute diff bet two means)/(variability of groups) = | x1 - x2 | / sqrt(s1^2/n1  +  s2^2/n2)
+      - t-value = signal/noise = (absolute diff bet two means)/(variability of groups) = | x1 - x2 | / sqrt(s1^2/n1  +  s2^2/n2)
         
-    Thus, increasing variance will give you more noise. Increasing #samples will decrease the noise.
+      - Thus, increasing variance will give you more noise. Increasing #samples will decrease the noise.
         
-    Degrees of freedom (DOF) = n1 + n2 - 2
+      - Degrees of freedom (DOF) = n1 + n2 - 2
     
-    if t-value > critical value (from table) => reject hypothesis (found a statistically significant diff bet two means) 
+      - if t-value > critical value (from table) => reject hypothesis (found a statistically significant diff bet two means) 
     
-    Independent (unpaired) samples means that two separate populations used to take samples. Paired samples means samples taken from the same population, and now we are comparing two means.
+      - Independent (unpaired) samples means that two separate populations used to take samples. Paired samples means samples taken from the same population, and now we are comparing two means.
     
-    In a two tailed test, we are not sure which direction the variance will be. Considering alpha=0.05, the 0.05 is split into 0.025 on both of the tails. In the middle is the remaining 0.95. Run a one-tailed test if sure about the directionality.
+      - In a two tailed test, we are not sure which direction the variance will be. Considering alpha=0.05, the 0.05 is split into 0.025 on both of the tails. In the middle is the remaining 0.95. Run a one-tailed test if sure about the directionality.
     
-    Calculating t-statistic when comparing sample mean with an already known mean. t-statistic = 
+      - Calculating t-statistic when comparing sample mean with an already known mean. t-statistic = 
     
    - Z-test: 
     
-    Uses a normal distribution
+      - Uses a normal distribution
     
-    (mu, sigma) are population statistics. (x_bar, s) are sample statistics. 
+      - (mu, sigma) are population statistics. (x_bar, s) are sample statistics. 
     
-    z-score = (x-mu)/sigma
-    z-statistic = (x_bar - mu)/ sqrt(sigma^2/n)
-    t-statistic = (x_bar - mu)/ sqrt(s^2/n)
+      - z-score = (x-mu)/sigma
+      - z-statistic = (x_bar - mu)/ sqrt(sigma^2/n)
+      - t-statistic = (x_bar - mu)/ sqrt(s^2/n)
     
-    Use z-stat when pop_std (sigma) is known and n>=30. Otherwise use t-stat.
+      - Use z-stat when pop_std (sigma) is known and n>=30. Otherwise use t-stat.
     
     
    - ANOVA test: compares >2 means
@@ -181,11 +183,11 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 <details>
   <summary>Important Formulae</summary>
   
-   - Sensitivity = True Positive Rate = TP/(TP+FN)
-   - Specificity = 1 - False Positive Rate = 1 - FP/(FP+TN) = TN/(FP+TN)
-   - Precision =  TP/(TP+FP)
-   - Recall = TP/(TP+FN)
-   - F1-score = 2*Precision*Recall/(Precision + Recall)
+   - `Sensitivity` = True Positive Rate = TP/(TP+FN)
+   - `Specificity` = 1 - False Positive Rate = 1 - FP/(FP+TN) = TN/(FP+TN)
+   - `Precision` =  TP/(TP+FP)
+   - `Recall` = TP/(TP+FN)
+   - `F1-score` = 2*Precision*Recall/(Precision + Recall)
 
 </details>
 
@@ -230,53 +232,53 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
   
    - Adaboost
     
-    Combines a lot of "weak learners" to make decisions.
+      - Combines a lot of "weak learners" to make decisions.
     
-    Single level decision trees (one root, two leaves), known as stumps.
+      - Single level decision trees (one root, two leaves), known as stumps.
     
-    Each stump has a weighted say in voting (as opposed to random forests where each tree has an equal vote).
+      - Each stump has a weighted say in voting (as opposed to random forests where each tree has an equal vote).
     
-    Errors that the first stump makes, influences how the second stump is made. Thus, order is important
+      - Errors that the first stump makes, influences how the second stump is made. Thus, order is important
     (as opposed to random forests where each tree is made independent of the others, doesnt matter the order in which trees are made)
     
-    First all samples are given a weight (equal weights initially). Then first stump is made based on which feature classifies the best
+      - First all samples are given a weight (equal weights initially). Then first stump is made based on which feature classifies the best
     (feature with lowest Gini index chosen). Now to decide stump's weight in final classification, we calculate the following. 
     
-    total_error = sum(weights of samples incorrectly classified)
-    amount_of_say = 0.5log( (1-total_error)/total_error )
+      - total_error = sum(weights of samples incorrectly classified)
+      - amount_of_say = 0.5log( (1-total_error)/total_error )
     
-    When stump does a good job, amount_of_say is closer to 1.
+      - When stump does a good job, amount_of_say is closer to 1.
     
-    Now modify the weights so that the next stump learns from the mistakes.
-    We want to emphasize on correctly classifying the samples that were wronged earlier.
+      - Now modify the weights so that the next stump learns from the mistakes.
+      - We want to emphasize on correctly classifying the samples that were wronged earlier.
     
-    new_sample_weight = sample_weight * exp(amount_of_say) => increased sample weight
-    new_sample_weight = sample_weight * exp(-amount_of_say) => decreased sample weight
+      - new_sample_weight = sample_weight * exp(amount_of_say) => increased sample weight
+      - new_sample_weight = sample_weight * exp(-amount_of_say) => decreased sample weight
     
-    Then normalize new_sample_weights. Then create a new collection by sampling records, but with a greater probablilty of
+      - Then normalize new_sample_weights. Then create a new collection by sampling records, but with a greater probablilty of
     picking those which were wrongly classified earlier. This is where you can use new_sample_weights (normalized).
     After re-sampling is done, assign equal weights to all samples and repeat for finding second stump. 
     
    - Gradient Boost
     
-    Starts by making a single leaf instead of a stump. Considering regression, leaf contains average of target variable as initial prediction.
+      - Starts by making a single leaf instead of a stump. Considering regression, leaf contains average of target variable as initial prediction.
     
-    Then build a tree (usu with 8 to 32 leaves). All trees are scaled equally (unlike AdaBoost where trees are weighted while prediciton)
+      - Then build a tree (usu with 8 to 32 leaves). All trees are scaled equally (unlike AdaBoost where trees are weighted while prediciton)
     
-    The successive trees are also based on previous errors like AdaBoost.
+      - The successive trees are also based on previous errors like AdaBoost.
     
-    Using initial prediction, calculate distance from actual target values, call them residuals, and store them.
+      - Using initial prediction, calculate distance from actual target values, call them residuals, and store them.
     
-    Now use the features to predict the residuals. The average of the values that finally end up in the same leaf is used as the
+      - Now use the features to predict the residuals. The average of the values that finally end up in the same leaf is used as the
     predicted regression value for that leaf (this is true when the underlying loss function to be minimized is the squared residual fn.)
     
-    Then 
-    new_prediction = initial_prediction + learning_rate*result_from_tree1
-    new_residual = target_value - new_prediction
+      - Then 
+      - new_prediction = initial_prediction + learning_rate*result_from_tree1
+      - new_residual = target_value - new_prediction
     
-    new_residual will be smaller than old_residual, thus we are taking small steps towards learning to predict target_value accurately
+      - new_residual will be smaller than old_residual, thus we are taking small steps towards learning to predict target_value accurately
     
-    Train new tree on the new_residual, add the result_from_tree2*learning_rate to new_prediction to update it. Rinse and repeat.
+      - Train new tree on the new_residual, add the result_from_tree2*learning_rate to new_prediction to update it. Rinse and repeat.
 
   
 </details>
