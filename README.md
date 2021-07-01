@@ -65,9 +65,11 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 :note:
 
 <details> :notebook:
-  <summary>P-values</summary>
+  <summary>Notes on p-values, statistical significance</summary>
   <ul>
-   <li> 0 <= p-value <= 1
+   <li> p-values 
+    
+    0 <= p-value <= 1
    
     The closer the p-value to 0, the more the confidence that the null hypothesis
     (that there is no difference between two things) is false.
@@ -87,21 +89,26 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
    
     A small p-value does not imply that the difference between the two things is large.
     
-  </ul>
-</details>
-
-<details>
-  <summary>Error Types</summary>
-  <ul>
-   <li> Type-1 error: Incorrectly reject null (False positive)
-   <li> Alpha: Prob(type-1 error) (aka level of significance)
-   <li> Type-2 error: Fail to reject when you should have rejected null hypothesis (False negative)
-   <li> Beta: Prob(type-2 error)
-   <li> Power: Prob(Finding difference between when when it truly exists) = 1 - beta
-   <li> Having power > 80% for a study is good. Calculated before study is conducted based on projections.
-   <li> P-value: Prob(obtaining a result as extreme as the current one, assuming null is true)
-   <li> Low p-value -> reject null hypothesis, high p-value -> fail to reject hypothesis
-   <li> If p-value < alpha -> study was statistically significant. Alpha = 0.05 usually
+   <li> Error Types
+    
+    Type-1 error: Incorrectly reject null (False positive)
+   
+    Alpha: Prob(type-1 error) (aka level of significance)
+   
+    Type-2 error: Fail to reject when you should have rejected null hypothesis (False negative)
+   
+    Beta: Prob(type-2 error)
+   
+    Power: Prob(Finding difference between when when it truly exists) = 1 - beta
+   
+    Having power > 80% for a study is good. Calculated before study is conducted based on projections.
+   
+    P-value: Prob(obtaining a result as extreme as the current one, assuming null is true)
+   
+    Low p-value -> reject null hypothesis, high p-value -> fail to reject hypothesis
+   
+    If p-value < alpha -> study was statistically significant. Alpha = 0.05 usually
+    
   </ul>
 </details>
 
