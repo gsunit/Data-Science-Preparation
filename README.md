@@ -36,6 +36,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 - [ ] [Hackerrank SQL Practice Questions](https://www.hackerrank.com/domains/sql)
 - [ ] [Interview Questions - SQL Nomenclature, Theory, Databases](https://www.jigsawacademy.com/blogs/business-analytics/sql-joins-interview-questions/)
 - [ ] [SQL Joins](https://learnsql.com/blog/sql-join-interview-questions-with-answers/)
+- [ ] [Popular Interview Questions solved](https://github.com/Aafreen29/SQL-Interview-Prep-Question/blob/master/queries.sql)
 
 ### Probability
 //TODO: add probability resources here. Accepting PRs.
