@@ -37,6 +37,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 - [ ] [Interview Questions - SQL Nomenclature, Theory, Databases](https://www.jigsawacademy.com/blogs/business-analytics/sql-joins-interview-questions/)
 - [ ] [SQL Joins](https://learnsql.com/blog/sql-join-interview-questions-with-answers/)
 - [ ] [Popular Interview Questions solved](https://github.com/Aafreen29/SQL-Interview-Prep-Question/blob/master/queries.sql)
+- [ ] [Amazon Data Analyst SQL Interview Questions](https://leetcode.com/discuss/interview-question/606844/amazon-data-analyst-sql-interview-questions)
 
 ### Probability
 //TODO: add probability resources here. Accepting PRs.
