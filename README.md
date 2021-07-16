@@ -306,6 +306,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] [Regularization, Dropout, Early Stopping](https://www.analyticsvidhya.com/blog/2018/04/fundamentals-deep-learning-regularization-techniques/)
  - [ ] [Train-test splitting, Stratification](https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/)
  - [ ] [Convolution Neural Networks - EXPLAINED](https://www.youtube.com/watch?v=m8pOnJxOcqY)
+ - [ ] [k-fold Cross-Validation](https://machinelearningmastery.com/k-fold-cross-validation/)
 
 ### Feature Transformation
 
