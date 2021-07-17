@@ -220,7 +220,14 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
     - Cross entropy loss: -y*ln(y) - (1-y)*(1-ln(y))
     - Average over all data points to evaluate total loss
   
-  - CE loss penalizes wrong prediction more than SE loss. This is important for training a classifier.
+  - CE loss penalizes wrong prediction more than SE loss. 
+  - E.g. Consider predictions for y=1
+    - CE = -(1)*ln(y')
+    - SE = (y'-1)^2
+    - The value of y' will range between 0 and 1. Thus plotting CE=-ln(y) & SE=(y'-1)^2
+    - we can see that if y' tends towards 0, the CE tends to infinity. Which is a good thing as we would want to penalize more.
+  
+  - This is important for training a classifier where we are predicting discrete values
   - However, in regression we are predicting continuous values.
   - Thus, slight deviation around ground truth is tolerable (and even desirable, otherwise we are overfitting)
   
