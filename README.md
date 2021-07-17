@@ -212,7 +212,21 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] [Python | Decision Tree Regression using sklearn - GeeksforGeeks](https://www.geeksforgeeks.org/python-decision-tree-regression-using-sklearn/?ref=rp)
  
 ### Loss functions
+ <details>
+  <summary>Cross-entropy loss vs squared-error loss</summary>
+  
+  Loss for a single data point. Average over all data points to evaluate total loss (y: ground truth, y': predicted value)
+  - Squared error loss: (y'-y)^2
+  - Cross entropy loss: -y*ln(y) - (1-y)*(1-ln(y))
+  
+  - CE loss penalizes wrong prediction more than SE loss.
+  - This is important for training a classifier. 
+  - E.g. for y=0, y'=0.9. SE-loss = 0.01. CE-loss = 
+  
+  
+ </details>
  - [ ] [Why do we need Cross Entropy Loss? (Visualized)](https://www.youtube.com/watch?v=gIx974WtVb4)
+ - [ ] [Where did the binary cross entropy loss function come from?](https://towardsdatascience.com/where-did-the-binary-cross-entropy-loss-function-come-from-ac3de349a715)
 
 ### L1, L2 Regression
  - [ ] [Ridge vs Lasso Regression, Visualized](https://www.youtube.com/watch?v=Xm2C_gTAl8c)
