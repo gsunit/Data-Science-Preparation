@@ -124,48 +124,67 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 ### Statistical Tests
 
  <details>
-  <summary>Statistical Tests Notes</summary>
-  
-   - t-Test
-   
-      - compares 2 means. Works well when sample size is small. We esimate popl_std by sample_std.
+  <summary>t-Test</summary>
+
+    - compares 2 means. Works well when sample size is small. We esimate popl_std by sample_std.
+
+    - We are less confident that the distribution resembles normal dist. As sample size increases, it approches normal dist (at about n~=30)
+
+    - t-value = signal/noise = (absolute diff bet two means)/(variability of groups) = | x1 - x2 | / sqrt(s1^2/n1  +  s2^2/n2)
+
+    - Thus, increasing variance will give you more noise. Increasing #samples will decrease the noise.
+
+    - Degrees of freedom (DOF) = n1 + n2 - 2
+
+    - if t-value > critical value (from table) => reject hypothesis (found a statistically significant diff bet two means) 
+
+    - Independent (unpaired) samples means that two separate populations used to take samples. Paired samples means samples taken from the same population, and now we are comparing two means.
+
+    - In a two tailed test, we are not sure which direction the variance will be. Considering alpha=0.05, the 0.05 is split into 0.025 on both of the tails. In the middle is the remaining 0.95. Run a one-tailed test if sure about the directionality.
+
+    - Calculating t-statistic when comparing sample mean with an already known mean. t-statistic = 
+
+</details>
+
+<details>
+  <summary>Z-test</summary>
     
-      - We are less confident that the distribution resembles normal dist. As sample size increases, it approches normal dist (at about n~=30)
-        
-      - t-value = signal/noise = (absolute diff bet two means)/(variability of groups) = | x1 - x2 | / sqrt(s1^2/n1  +  s2^2/n2)
-        
-      - Thus, increasing variance will give you more noise. Increasing #samples will decrease the noise.
-        
-      - Degrees of freedom (DOF) = n1 + n2 - 2
+    - Uses a normal distribution
+
+    - (mu, sigma) are population statistics. (x_bar, s) are sample statistics. 
+
+    - z-score = (x-mu)/sigma
+    - z-statistic = (x_bar - mu)/ sqrt(sigma^2/n)
+    - t-statistic = (x_bar - mu)/ sqrt(s^2/n)
+
+    - Use z-stat when pop_std (sigma) is known and n>=30. Otherwise use t-stat.
     
-      - if t-value > critical value (from table) => reject hypothesis (found a statistically significant diff bet two means) 
-    
-      - Independent (unpaired) samples means that two separate populations used to take samples. Paired samples means samples taken from the same population, and now we are comparing two means.
-    
-      - In a two tailed test, we are not sure which direction the variance will be. Considering alpha=0.05, the 0.05 is split into 0.025 on both of the tails. In the middle is the remaining 0.95. Run a one-tailed test if sure about the directionality.
-    
-      - Calculating t-statistic when comparing sample mean with an already known mean. t-statistic = 
-    
-   - Z-test: 
-    
-      - Uses a normal distribution
-    
-      - (mu, sigma) are population statistics. (x_bar, s) are sample statistics. 
-    
-      - z-score = (x-mu)/sigma
-      - z-statistic = (x_bar - mu)/ sqrt(sigma^2/n)
-      - t-statistic = (x_bar - mu)/ sqrt(s^2/n)
-    
-      - Use z-stat when pop_std (sigma) is known and n>=30. Otherwise use t-stat.
-    
-    
+</details>
+
+<details>
+  <summary>Chi-squred test</summary>
+
+    - chi^2 = sum( (observed-expected)^2 / (expected) )
+    - The larger the chi^2 value, the more likely the variables are related
+    - Correlation relationship between two attributes, A and B. A has c distinct values and B has r
+    - Contingency table: c values of A are the columns and r values of B the rows
+    - (Ai ,Bj): joint event that attribute A takes on value ai and attribute B takes on value bj
+    - oij= observed frequency, eij= expected frequency
+    - Test is based on a significance level, with (r -1)x(c-1) degrees of freedom
+    - Slides link: https://imgur.com/a/U4uJhHc
+
+</details>
+
+<details>
+  <summary>Statistical Tests notes</summary>
+
    - ANOVA test: compares >2 means
    - Chi-squared test: compares categorical variables
    - Shapiro Wilk test: test if a random sample comes from a normal distribution
    - Kolmogorov-Smirnov Goodness of Fit test: compares data with a known distribution to check if they have the same distribution
- 
-</details>
 
+</details>
+ 
  - [ ] [Student's t-test](https://www.youtube.com/watch?v=pTmLQvMM-1M)
  - [ ] [Z-Statistics vs. T-Statistics](https://www.youtube.com/watch?v=DEkPZv5ppHI)
  - [ ] [Hypothesis Testing Problems Z Test & T Statistics One & Two Tailed Tests 2](https://www.youtube.com/watch?v=zJ8e_wAWUzE)
@@ -212,30 +231,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] [Python | Decision Tree Regression using sklearn - GeeksforGeeks](https://www.geeksforgeeks.org/python-decision-tree-regression-using-sklearn/?ref=rp)
  
 ### Loss functions
- <details>
-  <summary>Cross-entropy loss vs squared-error loss</summary>
-  
-  - Loss for a single data point (y: ground truth, y': predicted value)
-    - Squared error loss: (y'-y)^2
-    - Cross entropy loss: -y*ln(y) - (1-y)*(1-ln(y))
-    - Average over all data points to evaluate total loss
-  
-  - CE loss penalizes wrong prediction more than SE loss. 
-  - E.g. Consider predictions for y=1
-    - CE = -(1)*ln(y')
-    - SE = (y'-1)^2
-    - The value of y' will range between 0 and 1. Thus plotting CE=-ln(y) & SE=(y'-1)^2
-    - we can see that if y' tends towards 0, the CE tends to infinity. Which is a good thing as we would want to penalize more.
-  
-  - This is important for training a classifier where we are predicting discrete values
-  - However, in regression we are predicting continuous values.
-  - Thus, slight deviation around ground truth is tolerable (and even desirable, otherwise we are overfitting)
-  
-  
- </details>
- 
  - [ ] [Why do we need Cross Entropy Loss? (Visualized)](https://www.youtube.com/watch?v=gIx974WtVb4)
- - [ ] [Where did the binary cross entropy loss function come from?](https://towardsdatascience.com/where-did-the-binary-cross-entropy-loss-function-come-from-ac3de349a715)
 
 ### L1, L2 Regression
  - [ ] [Ridge vs Lasso Regression, Visualized](https://www.youtube.com/watch?v=Xm2C_gTAl8c)
@@ -344,15 +340,20 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
   
  </details>
  
+ - [ ] [But what is a neural network? | Chapter 1, Deep learning] (https://www.youtube.com/watch?v=aircAruvnKk)
+ - [ ] [Gradient descent, how neural networks learn | Chapter 2, Deep learning](https://www.youtube.com/watch?v=IHZwWFHWa-w)
+ - [ ] [What is backpropagation really doing? | Chapter 3, Deep learning](https://www.youtube.com/watch?v=Ilg3gGewQ5U) 
  - [ ] [Train-test splitting, Stratification](https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/)
  - [ ] [Regularization, Dropout, Early Stopping](https://www.analyticsvidhya.com/blog/2018/04/fundamentals-deep-learning-regularization-techniques/)
- - [ ] [Train-test splitting, Stratification](https://machinelearningmastery.com/train-test-split-for-evaluating-machine-learning-algorithms/)
  - [ ] [Convolution Neural Networks - EXPLAINED](https://www.youtube.com/watch?v=m8pOnJxOcqY)
  - [ ] [k-fold Cross-Validation](https://machinelearningmastery.com/k-fold-cross-validation/)
+ - [ ] Exploding and vanishing gradients
  
 ### Activation Function
  - ReLU vs Leaky ReLU
  - Sigmoid activation
+ - [ ] [Activation Functions in NN (Sigmoid, tanh, ReLU, Leaky ReLU)](https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6)
+ - [ ] [Softmax]()
 
 ### Feature Transformation
 
