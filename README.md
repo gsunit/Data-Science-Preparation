@@ -253,6 +253,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  
 ### Loss functions
  - [ ] [Why do we need Cross Entropy Loss? (Visualized)](https://www.youtube.com/watch?v=gIx974WtVb4)
+ - [ ] [Cross-entropy loss (Binary, Multi-Class, Multi-Label)](https://towardsdatascience.com/cross-entropy-for-classification-d98e7f974451)
 
 ### L1, L2 Regression
  - [ ] [Ridge vs Lasso Regression, Visualized](https://www.youtube.com/watch?v=Xm2C_gTAl8c)
