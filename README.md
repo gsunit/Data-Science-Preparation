@@ -206,11 +206,11 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 <details>
   <summary>Important Formulae</summary>
   
-   - `Sensitivity` = True Positive Rate = TP/(TP+FN)
-   - `Specificity` = 1 - False Positive Rate = 1 - FP/(FP+TN) = TN/(FP+TN)
-   - `Precision` =  TP/(TP+FP)
-   - `Recall` = TP/(TP+FN)
-   - `F1-score` = 2*Precision*Recall/(Precision + Recall)
+   - `Sensitivity`   = True Positive Rate = TP/(TP+FN)                         = how sensitive is the model, same as recall
+   - `Specificity`   = 1 - False Positive Rate = 1 - FP/(FP+TN) = TN/(FP+TN) 
+   - `'P'recision`   = TP/(TP+FP) = TP / 'P'redicted Positive                  = how less often does the model raise a false alarm
+   - `'R'ecall`      = TP/(TP+FN) = TP / 'R'eal Positive                       = of all the true cases, how many did we catch
+   - `F1-score`      = 2*Precision*Recall/(Precision + Recall)                 = geometric mean of precision & recall
 
 </details>
 
