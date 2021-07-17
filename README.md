@@ -222,9 +222,30 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] [Stochastic Gradient Descent](https://www.youtube.com/watch?v=vMh0zPT0tLI)
  
 ### Decision Trees & Random Forests
+ 
+ <details>
+   <summary>Information Gain</summary>
+  
+   - Information gain determines the reduction of the uncertainty after splitting the dataset on a particular feature such that if the value of information gain increases, that feature is most useful for classification.
+   - IG = entropy after splitting - entropy before spliting
+   - Entropy =  - sum_over_n ( p_i * ln2(p_i) )
+ </details>
+ 
+ <details>
+   <summary>Gini Index</summary>
+  
+   - Higher the GI, more randomness. An attribute/feature with least gini index is preferred as root node while making a decision tree. 
+   - 0: all elements correctly divided
+   - 1: all elements randomly distributed across various classes
+   - 0.5: all elements uniformly distributed into some classes
+   - GI (P) = 1 - sum_over_n(p_i^2) where
+   - P=(p1 , p2 ,.......pn ) , and pi is the probability of an object that is being classified to a particular class.
+  
+ </details>
+ 
  - [ ] [Decision and Classification Trees](https://www.youtube.com/watch?v=_L39rN6gz7Y)
  - [ ] [Regression Trees](https://www.youtube.com/watch?v=g9c66TUylZ4)
- - [ ] [Gini Index, Infromation Gain](https://blog.quantinsti.com/gini-index/)
+ - [ ] [Gini Index, Infromation Gain](https://www.analyticssteps.com/blogs/what-gini-index-and-information-gain-decision-trees)
  - [ ] [Decision Trees, Part 2 - Feature Selection and Missing Data](https://www.youtube.com/watch?v=wpNl-JwwplA)
  - [ ] [How to Prune Regression Trees](https://www.youtube.com/watch?v=D0efHEJsfHo)
  - [ ] [Random Forests Part 1 - Building, Using and Evaluating](https://www.youtube.com/watch?v=J4Wdy0Wc_xQ)
