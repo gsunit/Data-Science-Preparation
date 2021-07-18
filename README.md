@@ -44,19 +44,6 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 
 ### Statistics
 
-<details>
-  <summary>Why divide by n-1 in sample standard deviation</summary>
- 
-  - Let f(v) = sum( (x_i-v)^2 )/n. Using f'(v) = 0, minima occurs at v = sum(x_i)/n = sample mean
-  - Thus, f(sample mean) < f(population mean), as minima occurs at sample mean
-  - Thus, sample std < population std (when using n in denominator)
-  - But our goal was to estimate a value close to population std using the data of samples.
-  - So we bump us sample std a bit by decreasing its denominator to n-1. Thus, bringing sample std closer to population std
-                                       
- 
-</details>
-
- - [ ] [Variance, Standard Deviation, Covariance, Correlation](https://www.mygreatlearning.com/blog/covariance-vs-correlation/)
  - [ ] [Probability vs Likelihood](https://www.youtube.com/watch?v=pYxNSUDSFH4)
  - [ ] [Maximum Likelihood For the Normal Distribution, step-by-step!](https://www.youtube.com/watch?v=Dn6b9fCIUpM)
  - [ ] [Naive Bayes](https://www.youtube.com/watch?v=O2L2Uv9pdDA)
@@ -214,6 +201,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] [Missing Data Imputation using Regression | Kaggle](https://www.kaggle.com/shashankasubrahmanya/missing-data-imputation-using-regression)
  - [ ] [Covariance and Correlation Part 2: Pearson&#39;s Correlation](https://www.youtube.com/watch?v=xZ_z8KWkhXE)
  - [ ] [R-squared explained](https://www.youtube.com/watch?v=2AQKmw14mHM)
+ - [ ] [Why is logistic regression a linear classifier?](https://stats.stackexchange.com/a/213148)
  
 ### Precision, Recall
 <details>
@@ -224,6 +212,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
    - `'P'recision`   = TP/(TP+FP) = TP / 'P'redicted Positive                  = how less often does the model raise a false alarm
    - `'R'ecall`      = TP/(TP+FN) = TP / 'R'eal Positive                       = of all the true cases, how many did we catch
    - `F1-score`      = 2*Precision*Recall/(Precision + Recall)                 = geometric mean of precision & recall
+   - `ROC curve`     = Graph of True Positive Rate vs False Positive Rate
 
 </details>
 
@@ -253,6 +242,9 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
    - 0.5: all elements uniformly distributed into some classes
    - GI (P) = 1 - sum_over_n(p_i^2) where
    - P=(p1 , p2 ,.......pn ) , and pi is the probability of an object that is being classified to a particular class.
+   - In Decision Tree, while calculating Gini Index for a feature:
+     - Feature divides the data into two nodes. Calculate Gini Impurity of both sections
+     - Weighted sum of Gini impurities of both nodes gives Gini Impurity for the feature
   
  </details>
  
@@ -265,26 +257,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] [Python | Decision Tree Regression using sklearn - GeeksforGeeks](https://www.geeksforgeeks.org/python-decision-tree-regression-using-sklearn/?ref=rp)
  
 ### Loss functions
- 
- <details>
-   <summary>Cross entropy loss</summary>
-  
-     - Cross entropy loss for class X = -p(X) * log q(X), where p(X) = prob(class X in target), q(X) = prob(class X in prediction)
-     - E.g. labels: [cat, dog, panda], target: [1,0,0], prediction: [0.9, 0.05, 0.05]
-     - Total CE loss for multi-class classification is the summation of CE loss of all classes
-     - Binary CE loss = -p(X) * log q(X) - (1-p(X)) * log (1-q(X))
-     - Cross entropy loss works even for target like [0.5, 0.1, 0.4] as we are taking the sums of CE loss of all classes
-     - In multi-label classification target can be [1, 0, 1] (not one-hot encoded). Given prediction: [0.6, 0.7, 0.4]. Then CE loss is evaluated as
-       - CE loss A = Binary CE loss with p(X) = 1, q(X) = 0.6
-       - CE loss B = Binary CE loss with p(X) = 0, q(X) = 0.7
-       - CE loss B = Binary CE loss with p(X) = 1, q(X) = 0.4
-       - Total CE loss = CE loss A + CE loss B + CE loss B
- 
- </details>
- 
- 
  - [ ] [Why do we need Cross Entropy Loss? (Visualized)](https://www.youtube.com/watch?v=gIx974WtVb4)
- - [ ] [Cross-entropy loss (Binary, Multi-Class, Multi-Label)](https://towardsdatascience.com/cross-entropy-for-classification-d98e7f974451)
 
 ### L1, L2 Regression
  - [ ] [Ridge vs Lasso Regression, Visualized](https://www.youtube.com/watch?v=Xm2C_gTAl8c)
@@ -295,39 +268,6 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] [regression - Why L1 norm for sparse models - Cross Validated](https://stats.stackexchange.com/questions/45643/why-l1-norm-for-sparse-models)
  
 ### PCA, SVM, LDA
- 
- <details>
-  <summary>PCA</summary>
-    
-    - Create a covariance matrix of the variables. Its eigenval and eigenvec describe the full multi-dimensional dataset.
-    - Eigenvec describe the direction of spread, Eigenval describe the importance of certain directions in describing the spread.
-    - In PCA, sequentially determine the axes in which the data varies the most
-    - All selected axes are eigenvectors of the symmetric covariance matrix, thus they are mutually perpendicular
-    - Then reframe the data using a subset of the most influential axes, by plotting the projections of original points on these axes. Thus dimensional reduction.
-    - Singular Value Decomposition is a way to find those vectors 
-    
-</details>
- 
-<details>
-  <summary>SVM</summary>
-  
-    - Margin is the smallest distance between decision boundary and data point.
-    - Maximum margin classifiers classify by using a decision boundary placed such that margin is maximized. Thus, they are super sensitive to outliers.
-    - Thus, when we allow some misclassifications to accomodate outliers, it is know as a Soft Margin Classifier aka Support Vector Classifier (SVC).
-    - Soft margin is determined through cross-validation. Support Vectors are those observations on the edge of Soft Margin.
-    - For 3D data, the Support Vector Classifier forms a plane. For 2D it forms a line.
-    - Support Vector Machines (SVM) moves the data into a higher dimension (new dimensions added by applying transformation on original dimensions)
-    - Then, a support vector classifier is found that separates the higher dimensional data into two groups.
-    - SVMs use Kernels that systematically find the SVCs in higher dimensions.
-    - Say 2D data transformed to 3D. Then Polynomial Kernels find 3D relationships between each pair of those 3D points. Then use them to find an SVC.
-    - Radial Basis Function (RBF) Kernel finds SVC in infinite dimensions. It behavs like a weighted nearest neighbour model (closest observations have the most impact on classification)
-    - Kernel functions do not need to transform points to higher dimenstion. They find pair-wise relationship between points as if they were in higher dimensions, known as Kernel Trick
-    - Polynomial relationship between two points a & b: (a*b + r)^d, where r & d are co-eff and degree of polynomial respectively found using cross validation
-    - RBF relationship between two points a & b: exp(-r (a-b)^2 ), where r determined using cross validation, scales the influence (in the weighted-nearest neighbour model)
- 
-    
-</details>
- 
  - [ ] [PCA main ideas in only 5 minutes](https://www.youtube.com/watch?v=HMOI_lkzW08)
  - [ ] [Visual Explanation of Principal Component Analysis, Covariance, SVD](https://www.youtube.com/watch?v=5HNr_j6LmPc)
  - [ ] [Principal Component Analysis (PCA), Step-by-Step](https://www.youtube.com/watch?v=FgakZw6K1QQ)
