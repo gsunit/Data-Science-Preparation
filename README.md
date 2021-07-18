@@ -56,6 +56,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  
 </details>
 
+ - [ ] [Variance, Standard Deviation, Covariance, Correlation](https://www.mygreatlearning.com/blog/covariance-vs-correlation/)
  - [ ] [Probability vs Likelihood](https://www.youtube.com/watch?v=pYxNSUDSFH4)
  - [ ] [Maximum Likelihood For the Normal Distribution, step-by-step!](https://www.youtube.com/watch?v=Dn6b9fCIUpM)
  - [ ] [Naive Bayes](https://www.youtube.com/watch?v=O2L2Uv9pdDA)
@@ -276,6 +277,37 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] [regression - Why L1 norm for sparse models - Cross Validated](https://stats.stackexchange.com/questions/45643/why-l1-norm-for-sparse-models)
  
 ### PCA, SVM, LDA
+ 
+ <details>
+  <summary>PCA</summary>
+    
+    - Create a covariance matrix of the variables. Its eigenval and eigenvec describe the full multi-dimensional dataset.
+    - Eigenvec describe the direction of spread, Eigenval describe the importance of certain directions in describing the spread.
+    - In PCA, sequentially determine the axes in which the data varies the most
+    - All selected axes are eigenvectors of the symmetric covariance matrix, thus they are mutually perpendicular
+    - Then reframe the data using a subset of the most influential axes, by plotting the projections of original points on these axes. Thus dimensional reduction.
+    - Singular Value Decomposition is a way to find those vectors 
+    
+</details>
+ 
+<details>
+  <summary>SVM</summary>
+  
+    - Margin is the smallest distance between decision boundary and data point.
+    - Maximum margin classifiers classify by using a decision boundary placed such that margin is maximized. Thus, they are super sensitive to outliers.
+    - Thus, when we allow some misclassifications to accomodate outliers, it is know as a Soft Margin Classifier aka Support Vector Classifier (SVC).
+    - Soft margin is determined through cross-validation. Support Vectors are those observations on the edge of Soft Margin.
+    - For 3D data, the Support Vector Classifier forms a plane. For 2D it forms a line.
+    - Support Vector Machines (SVM) moves the data into a higher dimension (new dimensions added by applying transformation on original dimensions)
+    - Then, a support vector classifier is found that separates the higher dimensional data into two groups.
+    - SVMs use Kernels that systematically find the SVCs in higher dimensions.
+    - Say 2D data transformed to 3D. Then Polynomial Kernels find 3D relationships between each pair of those 3D points. Then use them to find an SVC.
+    - Radial Basis Function (RBF) Kernel finds SVC in infinite dimensions. It behavs like a weighted nearest neighbour model (closest observations have the most impact on classification)
+    - Kernel functions do not need to transform points to higher dimenstion. They find pair-wise relationship between points as if they were in higher dimensions, known as Kernel Trick
+ 
+    
+</details>
+ 
  - [ ] [PCA main ideas in only 5 minutes](https://www.youtube.com/watch?v=HMOI_lkzW08)
  - [ ] [Visual Explanation of Principal Component Analysis, Covariance, SVD](https://www.youtube.com/watch?v=5HNr_j6LmPc)
  - [ ] [Principal Component Analysis (PCA), Step-by-Step](https://www.youtube.com/watch?v=FgakZw6K1QQ)
