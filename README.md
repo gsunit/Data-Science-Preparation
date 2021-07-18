@@ -338,61 +338,64 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 ### Boosting
  
  <details>
-  <summary>Notes on Adaboost, Gradient Boosting, XGBoost</summary>
-  
-   - Adaboost
+  <summary>Adaboost</summary>
     
-      - Combines a lot of "weak learners" to make decisions.
-    
-      - Single level decision trees (one root, two leaves), known as stumps.
-    
-      - Each stump has a weighted say in voting (as opposed to random forests where each tree has an equal vote).
-    
-      - Errors that the first stump makes, influences how the second stump is made. Thus, order is important
-    (as opposed to random forests where each tree is made independent of the others, doesnt matter the order in which trees are made)
-    
-      - First all samples are given a weight (equal weights initially). Then first stump is made based on which feature classifies the best
-    (feature with lowest Gini index chosen). Now to decide stump's weight in final classification, we calculate the following. 
-    
-      - total_error = sum(weights of samples incorrectly classified)
-      - amount_of_say = 0.5log( (1-total_error)/total_error )
-    
-      - When stump does a good job, amount_of_say is closer to 1.
-    
-      - Now modify the weights so that the next stump learns from the mistakes.
-      - We want to emphasize on correctly classifying the samples that were wronged earlier.
-    
-      - new_sample_weight = sample_weight * exp(amount_of_say) => increased sample weight
-      - new_sample_weight = sample_weight * exp(-amount_of_say) => decreased sample weight
-    
-      - Then normalize new_sample_weights. Then create a new collection by sampling records, but with a greater probablilty of
-    picking those which were wrongly classified earlier. This is where you can use new_sample_weights (normalized).
-    After re-sampling is done, assign equal weights to all samples and repeat for finding second stump. 
-    
-   - Gradient Boost
-    
-      - Starts by making a single leaf instead of a stump. Considering regression, leaf contains average of target variable as initial prediction.
-    
-      - Then build a tree (usu with 8 to 32 leaves). All trees are scaled equally (unlike AdaBoost where trees are weighted while prediciton)
-    
-      - The successive trees are also based on previous errors like AdaBoost.
-    
-      - Using initial prediction, calculate distance from actual target values, call them residuals, and store them.
-    
-      - Now use the features to predict the residuals. The average of the values that finally end up in the same leaf is used as the
-    predicted regression value for that leaf (this is true when the underlying loss function to be minimized is the squared residual fn.)
-    
-      - Then 
-      - new_prediction = initial_prediction + learning_rate*result_from_tree1
-      - new_residual = target_value - new_prediction
-    
-      - new_residual will be smaller than old_residual, thus we are taking small steps towards learning to predict target_value accurately
-    
-      - Train new tree on the new_residual, add the result_from_tree2*learning_rate to new_prediction to update it. Rinse and repeat.
+    - Combines a lot of "weak learners" to make decisions.
 
+    - Single level decision trees (one root, two leaves), known as stumps.
+
+    - Each stump has a weighted say in voting (as opposed to random forests where each tree has an equal vote).
+
+    - Errors that the first stump makes, influences how the second stump is made. 
+    - Thus, order is important (as opposed to random forests where each tree is made independent of the others, doesnt matter the order in which trees are made)
+
+    - First all samples are given a weight (equal weights initially).
+    - Then first stump is made based on which feature classifies the best (feature with lowest Gini index chosen).
+    - Now to decide stump's weight in final classification, we calculate the following. 
+
+    - total_error = sum(weights of samples incorrectly classified)
+    - amount_of_say = 0.5log( (1-total_error)/total_error )
+
+    - When stump does a good job, amount_of_say is closer to 1.
+
+    - Now modify the weights so that the next stump learns from the mistakes.
+    - We want to emphasize on correctly classifying the samples that were wronged earlier.
+
+    - new_sample_weight = sample_weight * exp(amount_of_say) => increased sample weight
+    - new_sample_weight = sample_weight * exp(-amount_of_say) => decreased sample weight
+
+    - Then normalize new_sample_weights.
+    - Then create a new collection by sampling records, but with a greater probablilty of picking those which were wrongly classified earlier.
+    - This is where you can use new_sample_weights (normalized). After re-sampling is done, assign equal weights to all samples and repeat for finding second stump. 
   
 </details>
 
+<details>
+
+  <summary>Gradient Boost</summary>
+
+    - Starts by making a single leaf instead of a stump. Considering regression, leaf contains average of target variable as initial prediction.
+        
+    - Then build a tree (usu with 8 to 32 leaves). All trees are scaled equally (unlike AdaBoost where trees are weighted while prediciton)
+
+    - The successive trees are also based on previous errors like AdaBoost.
+
+    - Using initial prediction, calculate distance from actual target values, call them residuals, and store them.
+
+    - Now use the features to predict the residuals. 
+    - The average of the values that finally end up in the same leaf is used as the predicted regression value for that leaf
+    - (this is true when the underlying loss function to be minimized is the squared residual fn.)
+
+    - Then 
+    - new_prediction = initial_prediction + learning_rate*result_from_tree1
+    - new_residual = target_value - new_prediction
+
+    - new_residual will be smaller than old_residual, thus we are taking small steps towards learning to predict target_value accurately
+
+    - Train new tree on the new_residual, add the result_from_tree2*learning_rate to new_prediction to update it. Rinse and repeat.
+
+</details>
+   
  - [ ] [Gradient Boost, Learning Rate Shrinkage](https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/)
  - [ ] [Gradient Boost Part 1: Regression Main Ideas](https://www.youtube.com/watch?v=3CC4N4z3GJc)
  - [ ] [XGBoost Part 1: Regression](https://www.youtube.com/watch?v=OtD8wVaFm6E)
