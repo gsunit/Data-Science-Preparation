@@ -265,6 +265,24 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] [Python | Decision Tree Regression using sklearn - GeeksforGeeks](https://www.geeksforgeeks.org/python-decision-tree-regression-using-sklearn/?ref=rp)
  
 ### Loss functions
+ 
+ <details>
+   <summary>Cross entropy loss</summary>
+  
+     - Cross entropy loss for class X = -p(X) * log q(X), where p(X) = prob(class X in target), q(X) = prob(class X in prediction)
+     - E.g. labels: [cat, dog, panda], target: [1,0,0], prediction: [0.9, 0.05, 0.05]
+     - Total CE loss for multi-class classification is the summation of CE loss of all classes
+     - Binary CE loss = -p(X) * log q(X) - (1-p(X)) * log (1-q(X))
+     - Cross entropy loss works even for target like [0.5, 0.1, 0.4] as we are taking the sums of CE loss of all classes
+     - In multi-label classification target can be [1, 0, 1] (not one-hot encoded). Given prediction: [0.6, 0.7, 0.4]. Then CE loss is evaluated as
+       - CE loss A = Binary CE loss with p(X) = 1, q(X) = 0.6
+       - CE loss B = Binary CE loss with p(X) = 0, q(X) = 0.7
+       - CE loss B = Binary CE loss with p(X) = 1, q(X) = 0.4
+       - Total CE loss = CE loss A + CE loss B + CE loss B
+ 
+ </details>
+ 
+ 
  - [ ] [Why do we need Cross Entropy Loss? (Visualized)](https://www.youtube.com/watch?v=gIx974WtVb4)
  - [ ] [Cross-entropy loss (Binary, Multi-Class, Multi-Label)](https://towardsdatascience.com/cross-entropy-for-classification-d98e7f974451)
 
