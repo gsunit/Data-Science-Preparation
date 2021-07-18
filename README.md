@@ -44,6 +44,18 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 
 ### Statistics
 
+<details>
+  <summary>Why divide by n-1 in sample standard deviation</summary>
+ 
+  - Let f(v) = sum( (x_i-v)^2 )/n. Using f'(v) = 0, minima occurs at v = sum(x_i)/n = sample mean
+  - Thus, f(sample mean) < f(population mean), as minima occurs at sample mean
+  - Thus, sample std < population std (when using n in denominator)
+  - But our goal was to estimate a value close to population std using the data of samples.
+  - So we bump us sample std a bit by decreasing its denominator to n-1. Thus, bringing sample std closer to population std
+                                       
+ 
+</details>
+
  - [ ] [Probability vs Likelihood](https://www.youtube.com/watch?v=pYxNSUDSFH4)
  - [ ] [Maximum Likelihood For the Normal Distribution, step-by-step!](https://www.youtube.com/watch?v=Dn6b9fCIUpM)
  - [ ] [Naive Bayes](https://www.youtube.com/watch?v=O2L2Uv9pdDA)
