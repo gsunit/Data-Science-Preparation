@@ -304,6 +304,8 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
     - Say 2D data transformed to 3D. Then Polynomial Kernels find 3D relationships between each pair of those 3D points. Then use them to find an SVC.
     - Radial Basis Function (RBF) Kernel finds SVC in infinite dimensions. It behavs like a weighted nearest neighbour model (closest observations have the most impact on classification)
     - Kernel functions do not need to transform points to higher dimenstion. They find pair-wise relationship between points as if they were in higher dimensions, known as Kernel Trick
+    - Polynomial relationship between two points a & b: (a*b + r)^d, where r & d are co-eff and degree of polynomial respectively found using cross validation
+    - RBF relationship between two points a & b: exp(-r (a-b)^2 ), where r determined using cross validation, scales the influence (in the weighted-nearest neighbour model)
  
     
 </details>
