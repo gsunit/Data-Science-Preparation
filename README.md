@@ -40,7 +40,8 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 - [ ] [Amazon Data Analyst SQL Interview Questions](https://leetcode.com/discuss/interview-question/606844/amazon-data-analyst-sql-interview-questions)
 
 ### Probability
-//TODO: add probability resources here. Accepting PRs.
+ - [ ] [Questions on Expectations in Probability (must-do, solutions well explained)](https://www.codechef.com/wiki/tutorial-expectation)
+ - [ ] [Brainstellar Interview Probability Puzzles (amazing resource for interview prep)](https://brainstellar.com/puzzles/probability/1)
 
 ### Statistics
 
