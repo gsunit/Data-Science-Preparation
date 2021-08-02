@@ -445,7 +445,10 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - Sigmoid activation
  - [ ] [Activation Functions in NN (Sigmoid, tanh, ReLU, Leaky ReLU)](https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6)
  - [ ] [Softmax]()
-
+ 
+### Time-series Analysis
+ - [ ] [Intro to time-series analysis and forecasting](https://towardsdatascience.com/the-complete-guide-to-time-series-analysis-and-forecasting-70d476bfe775)
+ 
 ### Feature Transformation
 
  - [ ] [correlation - In supervised learning, why is it bad to have correlated features? - Data Science Stack Exchange](https://datascience.stackexchange.com/questions/24452/in-supervised-learning-why-is-it-bad-to-have-correlated-features)
