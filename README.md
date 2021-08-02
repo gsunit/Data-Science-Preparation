@@ -287,6 +287,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  
  - [ ] [Why do we need Cross Entropy Loss? (Visualized)](https://www.youtube.com/watch?v=gIx974WtVb4)
  - [ ] [Cross-entropy loss (Binary, Multi-Class, Multi-Label)](https://towardsdatascience.com/cross-entropy-for-classification-d98e7f974451)
+ - [ ] [Hinge loss for SVM](https://towardsdatascience.com/a-definitive-explanation-to-hinge-loss-for-support-vector-machines-ab6d8d3178f1)
 
 ### L1, L2 Regression
  - [ ] [Ridge vs Lasso Regression, Visualized](https://www.youtube.com/watch?v=Xm2C_gTAl8c)
@@ -314,17 +315,29 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
   <summary>SVM</summary>
   
     - Margin is the smallest distance between decision boundary and data point.
+ 
     - Maximum margin classifiers classify by using a decision boundary placed such that margin is maximized. Thus, they are super sensitive to outliers.
+ 
     - Thus, when we allow some misclassifications to accomodate outliers, it is know as a Soft Margin Classifier aka Support Vector Classifier (SVC).
+ 
     - Soft margin is determined through cross-validation. Support Vectors are those observations on the edge of Soft Margin.
+ 
     - For 3D data, the Support Vector Classifier forms a plane. For 2D it forms a line.
+ 
     - Support Vector Machines (SVM) moves the data into a higher dimension (new dimensions added by applying transformation on original dimensions)
+ 
     - Then, a support vector classifier is found that separates the higher dimensional data into two groups.
+ 
     - SVMs use Kernels that systematically find the SVCs in higher dimensions.
+ 
     - Say 2D data transformed to 3D. Then Polynomial Kernels find 3D relationships between each pair of those 3D points. Then use them to find an SVC.
+ 
     - Radial Basis Function (RBF) Kernel finds SVC in infinite dimensions. It behavs like a weighted nearest neighbour model (closest observations have the most impact on classification)
+ 
     - Kernel functions do not need to transform points to higher dimenstion. They find pair-wise relationship between points as if they were in higher dimensions, known as Kernel Trick
+ 
     - Polynomial relationship between two points a & b: (a*b + r)^d, where r & d are co-eff and degree of polynomial respectively found using cross validation
+ 
     - RBF relationship between two points a & b: exp(-r (a-b)^2 ), where r determined using cross validation, scales the influence (in the weighted-nearest neighbour model)
  
     
