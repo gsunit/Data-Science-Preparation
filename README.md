@@ -440,7 +440,15 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
       - f(g(x)) = g(f(x))
   - Types of layers
     - Convolution layer - image convolved using kernels. Kernel applied through a sliding window. Depth of kernel = 3 for RGB image, 1 for grey-scale
-    - Activation Layer
+    - Activation Layer - 
+  
+  
+  Notes V.2
+   - Problems with NN and why CNN?
+     - The amount of weights rapidly becomes unmanageable for large images. For a 224 x 224 pixel image with 3 color channels there are around 150,000 weights that must be trained
+     - MLP (multi layer perceptrons) react differently to an input (images) and its shifted version — they are not translation invariant
+     - Spatial information is lost when the image is flattened into an MLP. Nodes that are close together are important because they help to define the features of an image
+  
   
  </details>
  
@@ -452,6 +460,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  - [ ] [Convolution Neural Networks - EXPLAINED](https://www.youtube.com/watch?v=m8pOnJxOcqY)
  - [ ] [k-fold Cross-Validation](https://machinelearningmastery.com/k-fold-cross-validation/)
  - [ ] Exploding and vanishing gradients
+ - [ ] [Intro to CNN](https://towardsdatascience.com/simple-introduction-to-convolutional-neural-networks-cdf8d3077bac)
  
 ### Activation Function
  - ReLU vs Leaky ReLU
