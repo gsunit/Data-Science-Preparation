@@ -448,6 +448,18 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
      - The amount of weights rapidly becomes unmanageable for large images. For a 224 x 224 pixel image with 3 color channels there are around 150,000 weights that must be trained
      - MLP (multi layer perceptrons) react differently to an input (images) and its shifted version — they are not translation invariant
      - Spatial information is lost when the image is flattened into an MLP. Nodes that are close together are important because they help to define the features of an image
+     - CNN’s leverage the fact that nearby pixels are more strongly related than distant ones. Influence of nearby pixels analyzed using filters.
+  
+  - Filters
+     - reduces the number of weights
+     - when the location of these features changes it does not throw the neural network off
+  
+    The convolution layers: Extracts features from the input
+    The fully connected (dense) layers: Uses data from convolution layer to generate output
+    
+  - Why do CNN work efficiently?
+    - Parameter sharing: a feature detector in the convolutional layer which is useful in one part of the image, might be useful in other ones
+    - Sparsity of connections: in each layer, each output value depends only on a small number of inputs
   
   
  </details>
