@@ -59,6 +59,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 
  - [ ] [Variance, Standard Deviation, Covariance, Correlation](https://www.mygreatlearning.com/blog/covariance-vs-correlation/)
  - [ ] [Probability vs Likelihood](https://www.youtube.com/watch?v=pYxNSUDSFH4)
+ - [ ] [Maximum Likelihood, clearly explained!!!](https://www.youtube.com/watch?v=XepXtl9YKwc)
  - [ ] [Maximum Likelihood For the Normal Distribution, step-by-step!](https://www.youtube.com/watch?v=Dn6b9fCIUpM)
  - [ ] [Naive Bayes](https://www.youtube.com/watch?v=O2L2Uv9pdDA)
  - [ ] [Why Dividing By N Underestimates the Variance](https://www.youtube.com/watch?v=sHRBg6BhKjI)
