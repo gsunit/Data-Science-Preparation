@@ -123,6 +123,14 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
     
 </details>
 
+ <details>
+  <summary>Maximum Likelihood Notes</summary>
+  
+   - Goal of maximum likelihood is to find the optimal way to fit a distribution to the data.
+   - Probability: Pr(x | mu,std): area under a fixed distribution
+   - Likelihood: Pr(mu,std | x) : y-axis values on curve (distribution function that can be varied) for fixed data point
+ 
+ </details>
  
  - [ ] [Null Hypothesis, p-Value, Statistical Significance, Type 1 Error and Type 2 Error](https://www.youtube.com/watch?v=YSwmpAmLV2s)
  - [ ] [Hypothesis Testing and The Null Hypothesis](https://www.youtube.com/watch?v=0oc49DyA3hU)
