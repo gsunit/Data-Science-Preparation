@@ -57,6 +57,18 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
  
 </details>
 
+<details>
+  <summary>Generative vs Discriminative models, Prior vs Posterior probability</summary>
+ 
+  - Prior:      Pr(x)               assumed distirbution for the param to be estimated without accounting for obeserved (sample) data
+  - Posterior:  Pr(x | obsvd data)  accounting for the observed data
+  - Likelihood: Pr(obsvd data | x)
+ P(x|obsvd data) ---proportional to--- P(obsvd data|x) * P(x)
+ posterior ---proportional to--- likelihood * prior
+                                       
+ 
+</details>
+
  - [ ] [Variance, Standard Deviation, Covariance, Correlation](https://www.mygreatlearning.com/blog/covariance-vs-correlation/)
  - [ ] [Probability vs Likelihood](https://www.youtube.com/watch?v=pYxNSUDSFH4)
  - [ ] [Maximum Likelihood, clearly explained!!!](https://www.youtube.com/watch?v=XepXtl9YKwc)
