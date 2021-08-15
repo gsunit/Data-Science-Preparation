@@ -177,20 +177,21 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
 
     - In a two tailed test, we are not sure which direction the variance will be. Considering alpha=0.05, the 0.05 is split into 0.025 on both of the tails. In the middle is the remaining 0.95. Run a one-tailed test if sure about the directionality.
 
-    - Calculating t-statistic when comparing sample mean with an already known mean. t-statistic = 
+    - (mu, sigma) are population statistics. (x_bar, s) are sample statistics.
+    - Calculating t-statistic when comparing sample mean with an already known mean. t-statistic = (x_bar - mu)/ sqrt(s^2/n)
 
 </details>
 
 <details>
   <summary>Z-test</summary>
     
-    - Uses a normal distribution
+    - Z-test uses a normal distribution
 
     - (mu, sigma) are population statistics. (x_bar, s) are sample statistics. 
 
-    - z-score = (x-mu)/sigma
-    - z-statistic = (x_bar - mu)/ sqrt(sigma^2/n)
-    - t-statistic = (x_bar - mu)/ sqrt(s^2/n)
+    - z-score = (x-mu)/sigma  // no. of std dev a particular sample (x) is away from population mean
+    - z-statistic = (x_bar - mu)/ sqrt(sigma^2/n) // no. of std dev sample mean is away from population mean
+    - t-statistic = (x_bar - mu)/ sqrt(s^2/n) // when population std dev (sigma) is unavailable we substitute with sample std dev (s)
 
     - Use z-stat when pop_std (sigma) is known and n>=30. Otherwise use t-stat.
     
