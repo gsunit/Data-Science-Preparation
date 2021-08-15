@@ -195,6 +195,22 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
     - Use z-stat when pop_std (sigma) is known and n>=30. Otherwise use t-stat.
     
 </details>
+ 
+ <details>
+  
+  <summary> Z-test example </summary>
+  
+   - [Z-score table](http://www.z-table.com/uploads/2/1/7/9/21795380/8573955.png?759)
+   - Question: Find z-critical score for two tailed test at alpha=0.03
+       - This means rejection area on each tail = 0.03/2 = 0.015
+       - So cumulative area till critical point on right = 1-0.015 = 0.985
+       - Now look for value on vertical axis that corresponds to 0.985 on alpha=0.03 column
+       - That value = 2.1 (z-critical score)
+ 
+ 
+ </details>
+ 
+
 
 <details>
   <summary>Chi-squred test</summary>
