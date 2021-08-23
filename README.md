@@ -280,7 +280,7 @@ Quickly go through the tutorial pages, you need not cram anything. Soon after, s
    <summary>Information Gain</summary>
   
    - Information gain determines the reduction of the uncertainty after splitting the dataset on a particular feature such that if the value of information gain increases, that feature is most useful for classification.
-   - IG = entropy after splitting - entropy before spliting
+   - IG = entropy before splitting - entropy after spliting
    - Entropy =  - sum_over_n ( p_i * ln2(p_i) )
  </details>
  
