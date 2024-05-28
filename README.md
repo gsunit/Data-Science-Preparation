@@ -25,6 +25,7 @@ If you want to make a list of important interview topics head over to this artic
  - [ ] [Deep Neural Networks with PyTorch | Coursera](https://www.coursera.org/learn/deep-neural-networks-with-pytorch?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-Kb0qPiTtTFPC3kMQZlnqpg&siteID=lVarvwc5BD0-Kb0qPiTtTFPC3kMQZlnqpg&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0)
  - [ ] [Machine Learning - complete course notes](http://www.holehouse.org/mlclass/)
  - [ ] [Data Science Interview Questions | Data Science Interview Questions and Answers with Tips](https://www.youtube.com/watch?v=7YuTmLvs1Dc)
+ - [ ] [Data Science Roles – A Comprehensive Guide](https://www.scaler.com/blog/data-science-roles/)
 
 ### Data Science Practice Questions
 If you are clueless about which topic to start from in data science, but have some basic idea about ML, then simply give these questions a go. If you get a bunch of them wrong, you'll know where to start your preparation :)
